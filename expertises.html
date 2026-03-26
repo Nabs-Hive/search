@@ -36,14 +36,16 @@
       <li><a href="entreprises.html">Entreprises</a></li>
       <li><a href="candidats.html">Candidats</a></li>
       <li><a href="offres.html">Offres</a></li>
-      <li><a href="expertises.html" class="active">Expertises</a></li>
+      <li><a href="a-propos.html">Expertises</a></li>
       <li><a href="a-propos.html">À propos</a></li>
     </ul>
     <div class="nav__ctas">
       <a href="candidats.html" class="btn btn--ghost btn--sm hide-mobile">Déposer son CV</a>
       <a href="contact.html" class="btn btn--primary btn--sm">Confier un recrutement</a>
     </div>
-    <button class="nav__burger"><span></span><span></span><span></span></button>
+    <button class="nav__burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 <div class="nav__mobile">
@@ -216,15 +218,49 @@
             <div class="footer-logo-sub">by The Hive Company</div>
           </div>
         </a>
-        <p style="margin-top:var(--space-4);">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Aix-en-Provence & PACA.</p>
+        <p>Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques à forte valeur ajoutée. Basé à Aix-en-Provence, nous intervenons sur toute la région PACA et en remote.</p>
+        <div class="socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="footer__col"><h5>Entreprises</h5><ul><li><a href="entreprises.html">Confier un recrutement</a></li><li><a href="expertises.html">Nos expertises</a></li></ul></div>
-      <div class="footer__col"><h5>Candidats</h5><ul><li><a href="offres.html">Toutes les offres</a></li><li><a href="candidats.html">Déposer son CV</a></li></ul></div>
-      <div class="footer__col"><h5>S&arch</h5><ul><li><a href="a-propos.html">Notre histoire</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col">
+        <h5>Entreprises</h5>
+        <ul>
+          <li><a href="entreprises.html">Confier un recrutement</a></li>
+          <li><a href="a-propos.html">Nos expertises</a></li>
+          <li><a href="a-propos.html#process">Notre méthode</a></li>
+          <li><a href="landing.html">Cabinet Aix-en-Provence</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Candidats</h5>
+        <ul>
+          <li><a href="offres.html">Toutes les offres</a></li>
+          <li><a href="candidats.html">Déposer son CV</a></li>
+          <li><a href="candidats.html#faq">FAQ candidats</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>S&arch</h5>
+        <ul>
+          <li><a href="a-propos.html">Notre histoire</a></li>
+          <li><a href="a-propos.html#equipe">L'équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2025 S&arch — by The Hive Company.</p>
-      <div style="display:flex;gap:var(--space-5);"><a href="#">Mentions légales</a><a href="#">RGPD</a></div>
+      <p>© 2025 S&arch — by The Hive Company. Tous droits réservés.</p>
+      <div style="display:flex;gap:var(--space-5);">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">RGPD</a>
+      </div>
     </div>
   </div>
 </footer>
