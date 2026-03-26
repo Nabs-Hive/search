@@ -1,576 +1,625 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S&arch — Cabinet de recrutement IT, Ingénierie & Fonctions stratégiques | Aix-en-Provence</title>
-  <meta name="description" content="S&arch accompagne vos recrutements IT, ingénierie et fonctions stratégiques à Aix-en-Provence. Approche spécialisée et fonctionnement au succès. By The Hive Company.">
-  <meta name="keywords" content="cabinet de recrutement Aix-en-Provence, recrutement IT, recrutement ingénierie, cabinet recrutement Aix">
-  <meta property="og:title" content="S&arch — La ruche qui trouve vos talents">
-  <meta property="og:description" content="Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. By The Hive Company, Aix-en-Provence.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/components.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "S&arch",
-    "description": "Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques",
-    "url": "https://search-hive.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Aix-en-Provence",
-      "addressRegion": "Provence-Alpes-Côte d'Azur",
-      "addressCountry": "FR"
-    }
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&arch — Cabinet de recrutement IT, Ingénierie & Fonctions stratégiques | Aix-en-Provence</title>
+<meta name="description" content="S&arch accompagne vos recrutements IT, ingénierie et fonctions stratégiques à Aix-en-Provence. Approche spécialisée, fonctionnement au succès.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --honey:#D4820A;--honey-light:#F0A830;--honey-pale:#FDF0D8;
+  --yellow:#F5C842;--black:#1A1612;--cream:#FAF6EE;
+  --cream-dark:#F5F0E8;--gray:#8A7A6A;--white:#FFFFFF;
+  --fd:'Playfair Display',Georgia,serif;
+  --fb:'DM Sans',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--cream);color:var(--black);overflow-x:hidden}
+a{text-decoration:none}
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 clamp(20px,5vw,60px);height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .3s,box-shadow .3s;background:transparent}
+.nav.scrolled{background:var(--cream);border-bottom:2px solid var(--black);box-shadow:0 4px 0 rgba(26,22,18,.08)}
+.nav__logo{display:flex;align-items:center;gap:10px}
+.nav__bee{width:40px;height:40px;background:var(--yellow);border:2px solid var(--black);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:3px 3px 0 var(--black);flex-shrink:0;transition:transform .15s,box-shadow .15s}
+.nav__bee:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--black)}
+.nav__name{font-family:var(--fd);font-size:22px;font-weight:900;letter-spacing:-.03em;color:var(--cream);transition:color .3s;line-height:1}
+.nav.scrolled .nav__name{color:var(--black)}
+.nav__name span{color:var(--honey)}
+.nav__sub{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:rgba(250,246,238,.5);display:block;margin-top:2px;transition:color .3s}
+.nav.scrolled .nav__sub{color:var(--gray)}
+.nav__links{display:flex;gap:28px;list-style:none}
+.nav__links a{font-size:13px;font-weight:500;color:rgba(250,246,238,.8);transition:color .2s}
+.nav.scrolled .nav__links a{color:var(--black)}
+.nav__links a:hover{color:var(--honey)}
+.nav__ctas{display:flex;gap:10px;align-items:center}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--fb);cursor:pointer;transition:all .15s;border:none;font-weight:600}
+.btn-ghost-nav{background:transparent;color:rgba(250,246,238,.8);border:2px solid rgba(250,246,238,.3);padding:8px 18px;border-radius:8px;font-size:13px}
+.nav.scrolled .btn-ghost-nav{color:var(--black);border-color:rgba(26,22,18,.25)}
+.btn-primary-nav{background:var(--honey);color:#fff;border:2px solid var(--black);padding:10px 20px;border-radius:8px;font-size:13px;font-weight:700;box-shadow:3px 3px 0 var(--black)}
+.btn-primary-nav:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--black)}
+.btn-primary{background:var(--honey);color:#fff;border:2px solid var(--black);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;box-shadow:4px 4px 0 var(--black)}
+.btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--black)}
+.btn-ghost{background:transparent;color:var(--black);border:2px solid var(--black);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;box-shadow:4px 4px 0 var(--black)}
+.btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--black)}
+.btn-yellow{background:var(--yellow);color:var(--black);border:2px solid var(--black);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:700;box-shadow:4px 4px 0 var(--black)}
+.btn-yellow:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--black)}
+.btn-ghostw{background:transparent;color:var(--cream);border:2px solid rgba(250,246,238,.4);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600}
+.btn-ghostw:hover{background:rgba(255,255,255,.08)}
+/* HERO */
+.hero{position:relative;min-height:100vh;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;align-items:center;padding:88px clamp(20px,5vw,60px) 60px;opacity:0;transform:translateX(60px);transition:opacity .7s,transform .7s;pointer-events:none}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:all}
+.slide.exit{opacity:0;transform:translateX(-60px)}
+/* S1 */
+.s1{background:var(--yellow)}
+.s1 .hc{max-width:52%}
+.badge-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--black);color:var(--yellow);padding:6px 16px;border-radius:100px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:24px}
+.h1{font-family:var(--fd);font-size:clamp(52px,7vw,86px);font-weight:900;line-height:.96;letter-spacing:-.04em;color:var(--black);margin-bottom:20px}
+.h1 em{color:var(--honey);font-style:italic}
+.hero-p{font-size:17px;color:rgba(26,22,18,.7);line-height:1.7;font-weight:300;margin-bottom:32px;max-width:460px}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap}
+.s1-img{position:absolute;right:0;top:0;bottom:0;width:42%;background:var(--black);border-radius:36px 0 0 36px;display:flex;align-items:center;justify-content:center}
+.s1-img-inner{width:82%;aspect-ratio:3/4;border-radius:22px;background:rgba(42,30,18,.8);border:2px solid rgba(245,200,66,.1);display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;color:rgba(245,200,66,.3);font-family:var(--fb);letter-spacing:.04em}
+/* S2 */
+.s2{background:var(--cream)}
+.s2-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;width:100%}
+.s2-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--honey);margin-bottom:16px}
+.s2-eyebrow::before{content:'';width:22px;height:2px;background:var(--honey);border-radius:2px;display:inline-block}
+.s2 .h1{color:var(--black)}
+.s2 .h1 em{color:var(--honey);font-style:normal;font-weight:300}
+.stat-cards{display:flex;flex-direction:column;gap:12px}
+.stat-card{background:#fff;border:2px solid var(--black);border-radius:14px;padding:16px 20px;box-shadow:4px 4px 0 var(--black);display:flex;align-items:center;gap:16px}
+.stat-num{font-family:var(--fd);font-size:32px;font-weight:900;color:var(--honey);min-width:72px}
+.stat-info h4{font-size:14px;font-weight:700;color:var(--black);margin-bottom:2px}
+.stat-info p{font-size:12px;color:var(--gray)}
+/* S3 */
+.s3{background:var(--black)}
+.s3-tag{display:inline-flex;align-items:center;gap:6px;background:var(--yellow);color:var(--black);padding:6px 14px;border-radius:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:24px;border:2px solid var(--black)}
+.s3 .h1{color:var(--cream)}
+.s3 .h1 em{color:var(--yellow)}
+.s3 .hero-p{color:rgba(250,246,238,.6)}
+.s3-cells{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;position:absolute;right:clamp(20px,5vw,60px);top:50%;transform:translateY(-50%);width:min(34%,320px)}
+.s3-cell{border:1px solid rgba(245,200,66,.15);border-radius:12px;padding:18px 14px;background:rgba(245,200,66,.04);text-align:center}
+.s3-cn{font-family:var(--fd);font-size:30px;font-weight:900;color:var(--yellow);line-height:1}
+.s3-cl{font-size:10px;color:rgba(245,200,66,.5);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+/* Carousel controls */
+.cnav{position:absolute;bottom:36px;left:clamp(20px,5vw,60px);display:flex;align-items:center;gap:14px;z-index:10}
+.cdot{width:8px;height:8px;border-radius:50%;background:rgba(26,22,18,.2);cursor:pointer;transition:all .3s;border:none}
+.cdot.on{background:var(--honey);transform:scale(1.4)}
+.s3 .cdot{background:rgba(250,246,238,.3)}
+.s3 .cdot.on{background:var(--yellow)}
+.ccount{font-size:12px;font-weight:700;color:rgba(26,22,18,.4);font-family:var(--fb)}
+.s3 .ccount{color:rgba(250,246,238,.4)}
+.carrows{position:absolute;bottom:36px;right:clamp(20px,5vw,60px);display:flex;gap:8px;z-index:10}
+.carr{width:44px;height:44px;border-radius:10px;border:2px solid var(--black);background:var(--cream);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;font-weight:700;color:var(--black);box-shadow:3px 3px 0 var(--black);transition:all .15s;line-height:1}
+.carr:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--black);background:var(--honey-pale)}
+.s3 .carr{background:rgba(255,255,255,.06);border-color:rgba(245,200,66,.3);color:var(--yellow);box-shadow:3px 3px 0 rgba(245,200,66,.2)}
+.pbar{position:absolute;bottom:0;left:0;height:3px;background:var(--honey);transition:width .08s linear}
+.s3 .pbar{background:var(--yellow)}
+/* TICKER */
+.ticker{background:var(--black);border-top:2px solid var(--black);padding:14px 0;overflow:hidden;white-space:nowrap}
+.tk-inner{display:inline-flex;animation:tk 20s linear infinite}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk-item{display:inline-flex;align-items:center;gap:16px;padding:0 28px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--cream)}
+.tk-sep{color:var(--honey);font-size:18px}
+/* LAYOUT */
+.section{padding:80px clamp(20px,5vw,60px)}
+.wrap{max-width:1200px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--honey);margin-bottom:14px}
+.eyebrow::before{content:'';width:22px;height:2px;background:var(--honey);border-radius:2px;display:inline-block}
+.h2{font-family:var(--fd);font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-.03em;line-height:1.05;color:var(--black)}
+.h2 em{color:var(--honey);font-style:italic}
+.h2-light{color:var(--cream)}
+.h2-light em{color:var(--yellow)}
+/* ADN */
+.adn-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}
+.adn-text p{font-size:16px;color:var(--gray);line-height:1.8;font-weight:300;margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tag{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:700;background:var(--honey-pale);color:var(--honey);border:1px solid rgba(212,130,10,.2)}
+.adn-img{aspect-ratio:4/5;border-radius:20px;border:2px solid var(--black);box-shadow:6px 6px 0 var(--black);background:linear-gradient(145deg,var(--honey-pale),#F5E8C0);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.adn-placeholder{font-size:13px;color:var(--gray);text-align:center}
+.badge-float{position:absolute;bottom:20px;left:20px;background:#fff;border:2px solid var(--black);border-radius:12px;padding:12px 16px;box-shadow:4px 4px 0 var(--black);display:flex;align-items:center;gap:8px}
+.bdot{width:10px;height:10px;border-radius:50%;background:var(--honey);flex-shrink:0}
+.btxt{font-size:12px;font-weight:700;color:var(--black)}
+/* EXP */
+.exp-bg{background:var(--cream-dark)}
+.exp-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;gap:24px;flex-wrap:wrap}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.exp-card{border:2px solid var(--black);border-radius:18px;padding:28px 24px;box-shadow:5px 5px 0 var(--black);transition:transform .2s,box-shadow .2s;cursor:pointer;position:relative;overflow:hidden;display:block;text-decoration:none}
+.exp-card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--black)}
+.ec-yellow{background:var(--yellow)}
+.ec-dark{background:var(--black)}
+.ec-white{background:#fff}
+.exp-num{font-family:var(--fd);font-size:56px;font-weight:900;color:rgba(26,22,18,.06);position:absolute;top:8px;right:14px;line-height:1}
+.ec-dark .exp-num{color:rgba(250,246,238,.05)}
+.exp-ico{width:48px;height:48px;border-radius:12px;background:rgba(26,22,18,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px}
+.ec-dark .exp-ico{background:rgba(245,200,66,.1)}
+.exp-card h3{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--black);margin-bottom:10px}
+.ec-dark h3{color:var(--cream)}
+.exp-card p{font-size:13px;color:var(--gray);line-height:1.7}
+.ec-dark p{color:rgba(250,246,238,.55)}
+.exp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.exp-tag{padding:4px 10px;border-radius:100px;font-size:10px;font-weight:600;background:rgba(26,22,18,.08);color:var(--black);border:1px solid rgba(26,22,18,.1)}
+.ec-dark .exp-tag{background:rgba(245,200,66,.12);color:var(--yellow);border-color:rgba(245,200,66,.2)}
+/* FACTORY */
+.factory-bg{background:var(--black)}
+.fac-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}
+.fac-img{aspect-ratio:4/3;border-radius:20px;border:2px solid rgba(245,200,66,.15);background:rgba(255,255,255,.03);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(250,246,238,.3);text-align:center}
+.fac-text p{font-size:16px;color:rgba(250,246,238,.6);line-height:1.8;font-weight:300;margin-bottom:18px}
+.fac-accent{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--cream);margin:16px 0;line-height:1.4}
+.fac-accent span{color:var(--yellow)}
+.fac-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.fac-stat{background:rgba(255,255,255,.04);border:1px solid rgba(245,200,66,.1);border-radius:12px;padding:16px 14px;text-align:center}
+.fac-num{font-family:var(--fd);font-size:28px;font-weight:900;color:var(--yellow);line-height:1}
+.fac-lbl{font-size:10px;color:rgba(250,246,238,.4);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+/* PROCESS */
+.proc-bg{background:var(--black);border-top:1px solid rgba(245,200,66,.1)}
+.proc-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;position:relative}
+.proc-steps::before{content:'';position:absolute;top:28px;left:5%;right:5%;height:2px;background:rgba(245,200,66,.15);z-index:0}
+.pstep{text-align:center;position:relative;z-index:1;padding:0 8px}
+.ps-num{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:20px;font-weight:900;margin:0 auto 16px}
+.ps-y{background:var(--yellow);color:var(--black)}
+.ps-o{background:transparent;border:2px solid rgba(245,200,66,.4);color:var(--yellow)}
+.pstep h4{font-size:13px;font-weight:700;color:var(--cream);margin-bottom:6px}
+.pstep p{font-size:11px;color:rgba(250,246,238,.4);line-height:1.6}
+/* MODELE */
+.mod-bg{background:var(--honey-pale)}
+.mod-inner{max-width:800px;margin:0 auto;text-align:center}
+.mod-avs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0}
+.mod-av{background:#fff;border:2px solid var(--black);border-radius:14px;padding:20px 18px;box-shadow:4px 4px 0 var(--black);text-align:left}
+.mod-av-ico{font-size:22px;margin-bottom:10px}
+.mod-av h4{font-size:14px;font-weight:700;color:var(--black);margin-bottom:6px}
+.mod-av p{font-size:12px;color:var(--gray);line-height:1.6}
+/* TESTI */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.testi-card{background:#fff;border:2px solid var(--black);border-radius:16px;padding:28px 24px;box-shadow:4px 4px 0 var(--black)}
+.tc-y{background:var(--yellow)}
+.testi-stars{font-size:14px;color:var(--honey);letter-spacing:2px;margin-bottom:14px}
+.tc-y .testi-stars{color:var(--black)}
+.testi-q{font-size:14px;line-height:1.8;color:var(--black);font-style:italic;margin-bottom:20px}
+.testi-auth{display:flex;align-items:center;gap:10px}
+.testi-av{width:40px;height:40px;border-radius:50%;background:var(--honey);border:2px solid var(--black);display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:14px;font-weight:700;color:#fff;flex-shrink:0}
+.tc-y .testi-av{background:var(--black);color:var(--yellow)}
+.testi-name{font-size:13px;font-weight:700;color:var(--black)}
+.testi-role{font-size:11px;color:var(--gray);margin-top:2px}
+/* CTA FINAL */
+.cta-sec{background:var(--honey);padding:80px clamp(20px,5vw,60px);border-top:3px solid var(--black);text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'S\26 arch';font-family:var(--fd);font-size:220px;font-weight:900;color:rgba(26,22,18,.06);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;letter-spacing:-.05em}
+.cta-sec h2{font-family:var(--fd);font-size:clamp(36px,5vw,64px);font-weight:900;color:var(--cream);line-height:1.05;letter-spacing:-.03em;margin-bottom:16px;position:relative}
+.cta-sec p{font-size:17px;color:rgba(250,246,238,.75);margin-bottom:36px;font-weight:300;position:relative}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+/* FOOTER */
+footer{background:var(--black);padding:60px clamp(20px,5vw,60px) 32px;border-top:3px solid var(--yellow)}
+.ft-top{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid rgba(245,200,66,.1)}
+.ft-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.ft-bee{width:40px;height:40px;background:var(--yellow);border-radius:10px;border:2px solid rgba(245,200,66,.5);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ft-name{font-family:var(--fd);font-size:20px;font-weight:900;color:var(--cream);letter-spacing:-.02em}
+.ft-name span{color:var(--yellow)}
+.ft-sub{font-size:8px;text-transform:uppercase;letter-spacing:.12em;color:rgba(250,246,238,.3);display:block;margin-top:2px}
+.ft-desc{font-size:13px;color:rgba(250,246,238,.4);line-height:1.7}
+.ft-col h5{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--yellow);margin-bottom:16px}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:10px}
+.ft-col a{font-size:13px;color:rgba(250,246,238,.45);text-decoration:none;transition:color .2s}
+.ft-col a:hover{color:var(--yellow)}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ft-bot p,.ft-bot a{font-size:11px;color:rgba(250,246,238,.25);text-decoration:none}
+/* BURGER */
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.burger span{width:24px;height:2px;background:var(--cream);border-radius:2px;display:block;transition:all .3s}
+.nav.scrolled .burger span{background:var(--black)}
+.mob-menu{display:none;position:fixed;inset:0;background:var(--cream);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:var(--fd);font-size:36px;font-weight:700;color:var(--black)}
+.mob-menu a span{color:var(--honey)}
+.mob-close{position:absolute;top:24px;right:24px;background:none;border:2px solid var(--black);border-radius:8px;width:44px;height:44px;cursor:pointer;font-size:20px;color:var(--black)}
+/* RESPONSIVE */
+@media(max-width:900px){
+  .nav__links,.nav__ctas{display:none}
+  .burger{display:flex}
+  .s1-img,.s3-cells{display:none}
+  .s1 .hc,.s3 .hc{max-width:100%}
+  .s2-grid,.adn-grid,.fac-grid{grid-template-columns:1fr}
+  .exp-grid,.testi-grid,.mod-avs{grid-template-columns:1fr}
+  .proc-steps{grid-template-columns:1fr;gap:24px}
+  .proc-steps::before{display:none}
+  .ft-top{grid-template-columns:1fr 1fr}
+  .h1{font-size:clamp(40px,10vw,64px)}
+}
+</style>
 </head>
 <body>
 
-<!-- ═══ NAVIGATION ═══════════════════════════ -->
-<nav class="nav">
-  <div class="nav__inner">
-            <a href="index.html" class="nav__logo-link">
-      <div class="nav__logo-bee">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#FDF0D8" stroke="#D4820A" stroke-width="1.5"/>
-          <rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#D4820A" opacity="0.25"/>
-          <rect x="11" y="13.5" width="12" height="2.5" rx="1.25" fill="#D4820A" opacity="0.25"/>
-          <rect x="11" y="17" width="12" height="2.5" rx="1.25" fill="#D4820A" opacity="0.25"/>
-          <circle cx="14" cy="11" r="1.4" fill="#0E0D0B"/>
-          <circle cx="20" cy="11" r="1.4" fill="#0E0D0B"/>
-          <ellipse cx="10" cy="10" rx="4" ry="2" fill="rgba(255,255,255,0.75)" stroke="#D4820A" stroke-width="1" transform="rotate(-30 10 10)"/>
-          <ellipse cx="24" cy="10" rx="4" ry="2" fill="rgba(255,255,255,0.75)" stroke="#D4820A" stroke-width="1" transform="rotate(30 24 10)"/>
-          <path d="M13 8.5 Q11 5 8 6" stroke="#D4820A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-          <path d="M21 8.5 Q23 5 26 6" stroke="#D4820A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-          <path d="M15 22.5 L13 28 M19 22.5 L21 28" stroke="#D4820A" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="nav__logo-type">
-        <div class="nav__logo-name"><span class="nav__logo-s">S</span><span class="nav__logo-amp">&amp;</span><span class="nav__logo-arch">arch</span></div>
-        <div class="nav__logo-sub">by The Hive Company</div>
-      </div>
-    </a>
-    <ul class="nav__links">
-      <li><a href="entreprises.html">Entreprises</a></li>
-      <li><a href="candidats.html">Candidats</a></li>
-      <li><a href="offres.html">Offres</a></li>
-      <li><a href="a-propos.html">Expertises</a></li>
-      <li><a href="a-propos.html">À propos</a></li>
-    </ul>
-    <div class="nav__ctas">
-      <a href="candidats.html" class="btn btn--ghost btn--sm hide-mobile">Déposer son CV</a>
-      <a href="contact.html" class="btn btn--primary btn--sm">Confier un recrutement</a>
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo">
+    <div class="nav__bee">
+      <svg width="22" height="22" viewBox="0 0 34 34" fill="none">
+        <ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#F5C842" stroke="#1A1612" stroke-width="1.5"/>
+        <rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.35"/>
+        <rect x="11" y="14" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.35"/>
+        <circle cx="14" cy="11" r="1.3" fill="#1A1612"/><circle cx="20" cy="11" r="1.3" fill="#1A1612"/>
+        <ellipse cx="10" cy="10" rx="4" ry="2" fill="rgba(255,255,255,.85)" stroke="#1A1612" stroke-width="0.8" transform="rotate(-30 10 10)"/>
+        <ellipse cx="24" cy="10" rx="4" ry="2" fill="rgba(255,255,255,.85)" stroke="#1A1612" stroke-width="0.8" transform="rotate(30 24 10)"/>
+        <path d="M14 8Q12 5 9 6M20 8Q22 5 25 6" stroke="#1A1612" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+        <path d="M15 22.5L13.5 27M19 22.5L20.5 27" stroke="#1A1612" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
     </div>
-    <button class="nav__burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div>
+      <div class="nav__name">S<span>&</span>arch</div>
+      <span class="nav__sub">by The Hive Company</span>
+    </div>
+  </a>
+  <ul class="nav__links">
+    <li><a href="entreprises.html">Entreprises</a></li>
+    <li><a href="candidats.html">Candidats</a></li>
+    <li><a href="offres.html">Offres</a></li>
+    <li><a href="expertises.html">Expertises</a></li>
+    <li><a href="a-propos.html">À propos</a></li>
+  </ul>
+  <div class="nav__ctas">
+    <a href="candidats.html#deposer" class="btn btn-ghost-nav">Déposer son CV</a>
+    <a href="contact.html" class="btn btn-primary-nav">Confier un recrutement →</a>
   </div>
+  <button class="burger" onclick="openMob()" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- ═══ MOBILE MENU ══════════════════════════ -->
-<div class="nav__mobile">
-  <button class="nav__mobile-close" aria-label="Fermer">✕</button>
-  <a href="entreprises.html">Entreprises</a>
-  <a href="candidats.html">Candidats</a>
-  <a href="offres.html">Offres</a>
-  <a href="a-propos.html">Expertises</a>
-  <a href="a-propos.html">À propos</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn--primary">Confier un recrutement</a>
+<div class="mob-menu" id="mob">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <a href="entreprises.html" onclick="closeMob()">Entreprises</a>
+  <a href="candidats.html" onclick="closeMob()">Candidats</a>
+  <a href="offres.html" onclick="closeMob()">Offres</a>
+  <a href="expertises.html" onclick="closeMob()">Expertises</a>
+  <a href="a-propos.html" onclick="closeMob()">À propos</a>
+  <a href="contact.html" class="btn btn-primary-nav" onclick="closeMob()">Confier un recrutement →</a>
 </div>
 
-<!-- ═══ HERO ══════════════════════════════════ -->
-<section class="hero">
-  <div class="hero__bg">
-    <!-- Placeholder : remplacer par The Hive-Shooting-Jan25-01712.jpg -->
-    <div style="width:100%;height:100%;background:linear-gradient(135deg,#1A1915 0%,#2d2a20 50%,#1a1915 100%);"></div>
-    <div class="hero__overlay"></div>
-  </div>
-  <div class="container">
-    <div class="hero__content reveal">
-      <div class="eyebrow" style="color:var(--honey-light);">
-        <span>Cabinet de recrutement — Aix-en-Provence</span>
-      </div>
-      <h1>La ruche qui trouve<br><em>vos talents</em></h1>
-      <p class="hero__sub">
-        Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques à forte valeur ajoutée.
-        S&arch identifie, approche et recrute les profils qui font vraiment la différence.
-      </p>
-      <div class="hero__ctas">
-        <a href="contact.html" class="btn btn--primary btn--lg">
-          Confier un recrutement <span class="arrow">→</span>
-        </a>
-        <a href="offres.html" class="btn btn--ghost-white btn--lg">Voir nos offres</a>
-      </div>
-      <div class="hero__proof reveal reveal-delay-2">
-        <div>
-          <div class="hero__proof-num"><span class="count-up" data-target="320">0</span>+</div>
-          <div class="hero__proof-label">missions<br>réalisées</div>
-        </div>
-        <div class="hero__proof-sep"></div>
-        <div>
-          <div class="hero__proof-num"><span class="count-up" data-target="96">0</span>%</div>
-          <div class="hero__proof-label">taux de<br>satisfaction</div>
-        </div>
-        <div class="hero__proof-sep"></div>
-        <div>
-          <div class="hero__proof-num"><span class="count-up" data-target="12">0</span>j</div>
-          <div class="hero__proof-label">délai moyen<br>de recrutement</div>
-        </div>
+<!-- HERO -->
+<div class="hero" id="hero">
+
+  <!-- S1 JAUNE -->
+  <div class="slide s1 active" id="sl0">
+    <div class="hc">
+      <div class="badge-eyebrow">🐝 Cabinet de recrutement — Aix-en-Provence</div>
+      <h1 class="h1">La ruche qui<br>trouve<br><em>vos talents</em></h1>
+      <p class="hero-p">Spécialistes IT, ingénierie et fonctions stratégiques. Une approche directe, une sélection exigeante, un engagement au succès.</p>
+      <div class="hbtns">
+        <a href="contact.html" class="btn btn-primary">Confier un recrutement →</a>
+        <a href="offres.html" class="btn btn-ghost">Voir les offres</a>
       </div>
     </div>
+    <div class="s1-img">
+      <div class="s1-img-inner">📸<br>Photo équipe<br><small style="font-size:10px;opacity:.6">Jan25-01712</small></div>
+    </div>
+    <div class="cnav">
+      <button class="cdot on" onclick="goTo(0)"></button>
+      <button class="cdot" onclick="goTo(1)"></button>
+      <button class="cdot" onclick="goTo(2)"></button>
+      <span class="ccount">01 / 03</span>
+    </div>
+    <div class="carrows">
+      <button class="carr" onclick="prev()">←</button>
+      <button class="carr" onclick="next()">→</button>
+    </div>
+    <div class="pbar" id="pb0" style="width:0"></div>
   </div>
-  <!-- Scroll indicator -->
-  <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.5;">
-    <span style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--cream);">Découvrir</span>
-    <div style="width:1px;height:32px;background:var(--cream);animation:scrollPulse 2s ease-in-out infinite;"></div>
-  </div>
-  <style>
-    @keyframes scrollPulse { 0%,100%{opacity:0.3;transform:scaleY(0.6)} 50%{opacity:1;transform:scaleY(1)} }
-  </style>
-</section>
 
-<!-- ═══ CONCEPT / ADN ════════════════════════ -->
-<section class="section">
-  <div class="container">
-    <div class="grid-2" style="align-items:center;gap:clamp(40px,6vw,100px);">
-      <div class="reveal">
+  <!-- S2 CRÈME -->
+  <div class="slide s2" id="sl1">
+    <div class="s2-grid">
+      <div class="hc">
+        <div class="s2-eyebrow">Notre approche</div>
+        <h1 class="h1">Pas plus de profils —<br><em>les bons.</em></h1>
+        <p class="hero-p">Notre sourcing factory mobilise des spécialistes par verticale métier pour vous envoyer uniquement des profils qualifiés et argumentés.</p>
+        <div class="hbtns">
+          <a href="entreprises.html" class="btn btn-primary">Découvrir notre méthode →</a>
+        </div>
+      </div>
+      <div class="stat-cards">
+        <div class="stat-card"><div class="stat-num">320+</div><div class="stat-info"><h4>Missions réalisées</h4><p>Depuis notre création</p></div></div>
+        <div class="stat-card"><div class="stat-num">96%</div><div class="stat-info"><h4>Taux de satisfaction</h4><p>Clients et candidats</p></div></div>
+        <div class="stat-card"><div class="stat-num">12j</div><div class="stat-info"><h4>Délai moyen</h4><p>Brief → shortlist qualifiée</p></div></div>
+      </div>
+    </div>
+    <div class="cnav">
+      <button class="cdot" onclick="goTo(0)"></button>
+      <button class="cdot on" onclick="goTo(1)"></button>
+      <button class="cdot" onclick="goTo(2)"></button>
+      <span class="ccount">02 / 03</span>
+    </div>
+    <div class="carrows">
+      <button class="carr" onclick="prev()">←</button>
+      <button class="carr" onclick="next()">→</button>
+    </div>
+    <div class="pbar" id="pb1" style="width:0"></div>
+  </div>
+
+  <!-- S3 DARK -->
+  <div class="slide s3" id="sl2">
+    <div class="hc" style="max-width:52%;position:relative;z-index:1">
+      <div class="s3-tag">🏆 Fonctionnement au succès</div>
+      <h1 class="h1">Recrutez<br><em>autrement.</em><br>Vraiment.</h1>
+      <p class="hero-p">Aucun frais si le recrutement n'aboutit pas. Notre engagement est aligné sur votre résultat, pas sur notre volume.</p>
+      <div class="hbtns">
+        <a href="contact.html" class="btn btn-yellow">Parlons de votre besoin →</a>
+        <a href="candidats.html" class="btn btn-ghostw">Je cherche un poste</a>
+      </div>
+    </div>
+    <div class="s3-cells">
+      <div class="s3-cell"><div class="s3-cn">IT</div><div class="s3-cl">&amp; Digital</div></div>
+      <div class="s3-cell"><div class="s3-cn">Ingé</div><div class="s3-cl">nierie</div></div>
+      <div class="s3-cell" style="grid-column:1/3"><div class="s3-cn">Tertiaire</div><div class="s3-cl">Fonctions stratégiques</div></div>
+      <div class="s3-cell"><div class="s3-cn">0€</div><div class="s3-cl">Si pas de recrutement</div></div>
+      <div class="s3-cell"><div class="s3-cn">≤3</div><div class="s3-cl">Profils par shortlist</div></div>
+    </div>
+    <div class="cnav">
+      <button class="cdot" onclick="goTo(0)"></button>
+      <button class="cdot" onclick="goTo(1)"></button>
+      <button class="cdot on" onclick="goTo(2)"></button>
+      <span class="ccount">03 / 03</span>
+    </div>
+    <div class="carrows">
+      <button class="carr" onclick="prev()">←</button>
+      <button class="carr" onclick="next()">→</button>
+    </div>
+    <div class="pbar" id="pb2" style="width:0"></div>
+  </div>
+
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="tk-inner">
+    <span class="tk-item">IT &amp; Digital <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Ingénierie <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Tertiaire <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Aix-en-Provence <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Fonctionnement au succès <span class="tk-sep">✦</span></span>
+    <span class="tk-item">by The Hive Company <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Sourcing Factory <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Approche directe <span class="tk-sep">✦</span></span>
+    <span class="tk-item">IT &amp; Digital <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Ingénierie <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Tertiaire <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Aix-en-Provence <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Fonctionnement au succès <span class="tk-sep">✦</span></span>
+    <span class="tk-item">by The Hive Company <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Sourcing Factory <span class="tk-sep">✦</span></span>
+    <span class="tk-item">Approche directe <span class="tk-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- ADN -->
+<div class="section" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="adn-grid">
+      <div class="adn-text">
         <div class="eyebrow">Notre ADN</div>
-        <h2>Un recrutement inspiré<br>par la logique de la ruche</h2>
-        <div class="divider"></div>
-        <p style="font-size:var(--text-lg);color:var(--black);line-height:1.8;margin-bottom:var(--space-5);">
-          Chez S&arch, le recrutement n'est pas un envoi de CV. C'est une mécanique précise, collective et exigeante.
-        </p>
-        <p>
-          Inspirée de la ruche, notre organisation combine spécialisation, réactivité et intelligence humaine
-          pour vous présenter les bons talents au bon moment. Chaque mission est traitée avec rigueur,
-          chaque profil est défendu avec conviction.
-        </p>
-        <div style="display:flex;gap:var(--space-6);margin-top:var(--space-7);">
-          <div>
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey);">IT & Digital</div>
-            <div style="font-size:var(--text-sm);color:var(--gray-warm);">Expertise verticale</div>
-          </div>
-          <div>
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey);">Ingénierie</div>
-            <div style="font-size:var(--text-sm);color:var(--gray-warm);">Expertise verticale</div>
-          </div>
-          <div>
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey);">Tertiaire</div>
-            <div style="font-size:var(--text-sm);color:var(--gray-warm);">Expertise verticale</div>
-          </div>
+        <h2 class="h2" style="margin-bottom:20px">Un recrutement inspiré<br><em>par la logique de la ruche</em></h2>
+        <p>Chez S&amp;arch, le recrutement n'est pas un envoi de CV en masse. C'est une démarche structurée, spécialisée et engagée — comme une ruche qui mobilise chaque abeille au bon endroit.</p>
+        <p>Nous sommes le cabinet de recrutement de <strong>The Hive Company</strong>, basé à Aix-en-Provence, intervenant sur toute la région PACA et au-delà.</p>
+        <div class="tags">
+          <span class="tag">IT &amp; Digital</span>
+          <span class="tag">Ingénierie</span>
+          <span class="tag">Tertiaire VA</span>
+          <span class="tag">Aix-en-Provence</span>
+          <span class="tag">Full Remote</span>
         </div>
-        <div style="margin-top:var(--space-7);">
-          <a href="a-propos.html" class="btn btn--ghost">Découvrir S&arch <span class="arrow">→</span></a>
-        </div>
+        <div style="margin-top:28px"><a href="a-propos.html" class="btn btn-primary">Découvrir S&amp;arch →</a></div>
       </div>
-      <div class="reveal reveal-delay-2" style="position:relative;">
-        <!-- Placeholder image : The Hive-Shooting-Jan25-01661.jpg -->
-        <div style="aspect-ratio:4/5;border-radius:var(--radius-xl);background:var(--cream-dark);overflow:hidden;position:relative;">
-          <div style="width:100%;height:100%;background:linear-gradient(135deg,var(--honey-pale) 0%,var(--gray-light) 100%);display:flex;align-items:center;justify-content:center;">
-            <div style="text-align:center;color:var(--gray-warm);">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto var(--space-3)"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 9 6 6m0-6-6 6"/></svg>
-              <p style="font-size:var(--text-sm);">Photo équipe à intégrer<br><small>The Hive-Shooting-Jan25-01661</small></p>
-            </div>
-          </div>
-        </div>
-        <!-- Badge flottant -->
-        <div style="position:absolute;bottom:32px;left:-24px;background:var(--white);border-radius:var(--radius-md);padding:var(--space-4) var(--space-5);box-shadow:0 8px 32px rgba(14,13,11,0.12);">
-          <div style="display:flex;align-items:center;gap:var(--space-3);">
-            <div style="width:10px;height:10px;border-radius:50%;background:var(--honey);animation:blink 2s ease-in-out infinite;"></div>
-            <div>
-              <div style="font-weight:600;font-size:var(--text-sm);color:var(--black);">Fonctionnement au succès</div>
-              <div style="font-size:var(--text-xs);color:var(--gray-warm);">Aucun frais si pas de recrutement</div>
-            </div>
-          </div>
-        </div>
-        <style>@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}</style>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ EXPERTISES ════════════════════════════ -->
-<section class="section section--cream-dark">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="eyebrow">Nos expertises</div>
-      <h2>Spécialistes, pas généralistes</h2>
-      <p>Trois verticales métiers maîtrisées en profondeur pour identifier des profils rares que les autres ne trouvent pas.</p>
-    </div>
-    <div class="grid-3 reveal reveal-delay-1">
-
-      <!-- IT & Digital -->
-      <div class="card-expertise">
-        <div class="card-expertise__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M8 9l3 3-3 3M13 15h3M3 7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
-          </svg>
-        </div>
-        <h4>IT & Digital</h4>
-        <p>Identification et recrutement de profils techniques rares et business-critical pour vos projets les plus stratégiques.</p>
-        <div class="card-expertise__tags">
-          <span class="tag tag--honey">Dev Fullstack</span>
-          <span class="tag tag--honey">DevOps</span>
-          <span class="tag tag--honey">Data / IA</span>
-          <span class="tag tag--honey">Cloud</span>
-          <span class="tag tag--honey">Cybersécurité</span>
-          <span class="tag tag--honey">Product Owner</span>
-        </div>
-        <a href="a-propos.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:var(--space-5);font-size:var(--text-sm);font-weight:600;color:var(--honey);">
-          En savoir plus <span>→</span>
-        </a>
-      </div>
-
-      <!-- Ingénierie -->
-      <div class="card-expertise">
-        <div class="card-expertise__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-          </svg>
-        </div>
-        <h4>Ingénierie</h4>
-        <p>Une capacité à parler métier, comprendre les environnements techniques et les contraintes terrain pour cibler juste.</p>
-        <div class="card-expertise__tags">
-          <span class="tag tag--honey">Ingénieur méthodes</span>
-          <span class="tag tag--honey">R&D</span>
-          <span class="tag tag--honey">Bureau d'études</span>
-          <span class="tag tag--honey">Production</span>
-          <span class="tag tag--honey">Énergie</span>
-          <span class="tag tag--honey">Qualité</span>
-        </div>
-        <a href="a-propos.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:var(--space-5);font-size:var(--text-sm);font-weight:600;color:var(--honey);">
-          En savoir plus <span>→</span>
-        </a>
-      </div>
-
-      <!-- Tertiaire -->
-      <div class="card-expertise">
-        <div class="card-expertise__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <h4>Tertiaire à forte VA</h4>
-        <p>Des recrutements à impact organisationnel direct : finance, achats, RH, commerce B2B et fonctions de pilotage.</p>
-        <div class="card-expertise__tags">
-          <span class="tag tag--honey">Finance</span>
-          <span class="tag tag--honey">Contrôle de gestion</span>
-          <span class="tag tag--honey">Achats</span>
-          <span class="tag tag--honey">Supply Chain</span>
-          <span class="tag tag--honey">RH spécialisés</span>
-          <span class="tag tag--honey">Commerce B2B</span>
-        </div>
-        <a href="a-propos.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:var(--space-5);font-size:var(--text-sm);font-weight:600;color:var(--honey);">
-          En savoir plus <span>→</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ PROCESS ════════════════════════════════ -->
-<section class="section">
-  <div class="container">
-    <div class="grid-2" style="align-items:flex-start;gap:clamp(40px,6vw,100px);">
-      <div class="reveal">
-        <div class="eyebrow">Notre méthode</div>
-        <h2>5 étapes pour un recrutement qui fonctionne</h2>
-        <div class="divider"></div>
-        <p>Un process éprouvé, sans friction, centré sur l'essentiel : trouver la bonne personne, pas juste un profil disponible.</p>
-        <div style="margin-top:var(--space-7);">
-          <a href="entreprises.html" class="btn btn--primary">Confier un recrutement <span class="arrow">→</span></a>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div class="process-step">
-          <div class="process-step__num">1</div>
-          <div class="process-step__body">
-            <h4>Cadrage</h4>
-            <p>Comprendre le besoin réel, le contexte, la culture d'entreprise, le niveau d'urgence et les critères vraiment différenciants. Pas de brief bâclé.</p>
-          </div>
-        </div>
-        <div class="process-step" style="margin-top:var(--space-6);">
-          <div class="process-step__num">2</div>
-          <div class="process-step__body">
-            <h4>Activation sourcing factory</h4>
-            <p>Mobilisation des spécialistes les plus pertinents par verticale métier pour cartographier les profils et lancer l'approche directe.</p>
-          </div>
-        </div>
-        <div class="process-step" style="margin-top:var(--space-6);">
-          <div class="process-step__num">3</div>
-          <div class="process-step__body">
-            <h4>Qualification</h4>
-            <p>Entretiens poussés, validation des compétences techniques, soft skills, cohérence de parcours et motivation réelle. On ne présente que ce qu'on a validé.</p>
-          </div>
-        </div>
-        <div class="process-step" style="margin-top:var(--space-6);">
-          <div class="process-step__num">4</div>
-          <div class="process-step__body">
-            <h4>Shortlist utile</h4>
-            <p>Une sélection réduite, argumentée, structurée et directement exploitable. Maximum 3 profils — les bons, pas les plus nombreux.</p>
-          </div>
-        </div>
-        <div class="process-step" style="margin-top:var(--space-6);">
-          <div class="process-step__num">5</div>
-          <div class="process-step__body">
-            <h4>Suivi &amp; closing</h4>
-            <p>Accompagnement jusqu'à l'embauche et au-delà. On sécurise l'expérience candidat et client pour que chaque recrutement soit une réussite durable.</p>
-          </div>
+      <div class="adn-img">
+        <div class="adn-placeholder">📸<br>Photo équipe<br><small>Jan25-01661</small></div>
+        <div class="badge-float">
+          <div class="bdot"></div>
+          <div class="btxt">Fonctionnement au succès</div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ═══ SOURCING FACTORY ══════════════════════ -->
-<section class="section section--dark" style="position:relative;">
-  <div class="hex-pattern-bg" style="color:var(--cream);"></div>
-  <div class="container" style="position:relative;z-index:1;">
-    <div class="grid-2" style="align-items:center;gap:clamp(40px,6vw,80px);">
-      <div class="reveal">
-        <!-- Placeholder image : The Hive-Shooting-Jan25-01395.jpg -->
-        <div style="aspect-ratio:3/2;border-radius:var(--radius-lg);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);overflow:hidden;display:flex;align-items:center;justify-content:center;">
-          <div style="text-align:center;color:rgba(250,248,243,0.3);">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto var(--space-3)"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 9 6 6m0-6-6 6"/></svg>
-            <p style="font-size:var(--text-sm);">The Hive-Shooting-Jan25-01395</p>
-          </div>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div class="eyebrow" style="color:var(--honey-light);">Sourcing Factory</div>
-        <h2 style="color:var(--cream);">Notre objectif n'est pas de vous envoyer plus de profils</h2>
-        <div class="divider"></div>
-        <p style="color:rgba(250,248,243,0.7);font-size:var(--text-lg);">Notre objectif est de vous envoyer <strong style="color:var(--honey-light);">les bons.</strong></p>
-        <p style="color:rgba(250,248,243,0.6);margin-top:var(--space-4);">
-          Notre sourcing factory s'appuie sur des spécialistes du recrutement mobilisés par verticales métiers.
-          Chaque mission est traitée avec une logique d'approche directe, de qualification rigoureuse et de
-          sélection utile.
-        </p>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin-top:var(--space-7);">
-          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-md);padding:var(--space-5);">
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey-light);">100%</div>
-            <div style="font-size:var(--text-sm);color:rgba(250,248,243,0.5);margin-top:4px;">Approche directe</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-md);padding:var(--space-5);">
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey-light);">≤ 3</div>
-            <div style="font-size:var(--text-sm);color:rgba(250,248,243,0.5);margin-top:4px;">Profils présentés max.</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-md);padding:var(--space-5);">
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey-light);">3</div>
-            <div style="font-size:var(--text-sm);color:rgba(250,248,243,0.5);margin-top:4px;">Verticales métiers</div>
-          </div>
-          <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-md);padding:var(--space-5);">
-            <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--honey-light);">0€</div>
-            <div style="font-size:var(--text-sm);color:rgba(250,248,243,0.5);margin-top:4px;">Si pas de recrutement</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ MODÈLE ÉCONOMIQUE ════════════════════ -->
-<section class="section section--honey">
-  <div class="container">
-    <div style="max-width:760px;margin:0 auto;text-align:center;" class="reveal">
-      <div class="eyebrow" style="justify-content:center;">Notre modèle</div>
-      <h2>Nous fonctionnons au succès</h2>
-      <div class="divider divider--center"></div>
-      <p style="font-size:var(--text-lg);color:var(--black);margin-bottom:var(--space-7);">
-        S&arch accompagne les entreprises sur leurs recrutements à forte valeur ajoutée via une approche
-        spécialisée, structurée et humaine. Les détails tarifaires et les modalités d'intervention sont
-        communiqués lors d'un premier échange, afin d'adapter notre accompagnement à votre besoin réel.
-      </p>
-      <div style="display:flex;justify-content:center;gap:var(--space-4);flex-wrap:wrap;">
-        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;color:var(--black);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--honey)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Aucun frais si pas de recrutement
-        </div>
-        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;color:var(--black);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--honey)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Tarif adapté à votre besoin
-        </div>
-        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:600;color:var(--black);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--honey)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Engagement sur le résultat
-        </div>
-      </div>
-      <div style="margin-top:var(--space-7);">
-        <a href="contact.html" class="btn btn--primary btn--lg">Discutons de votre besoin <span class="arrow">→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ TÉMOIGNAGES ═══════════════════════════ -->
-<section class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="eyebrow">Ils nous font confiance</div>
-      <h2>Ce qu'ils disent de S&arch</h2>
-    </div>
-    <div class="grid-3 reveal reveal-delay-1">
-
-      <div class="card-testi">
-        <div class="card-testi__stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="card-testi__quote">
-          S&arch a trouvé notre Directeur Technique en moins de trois semaines. Profil parfait, intégration réussie.
-          Un niveau d'exigence et de compréhension métier qu'on ne retrouve pas chez les cabinets généralistes.
-        </p>
-        <div class="card-testi__author">
-          <div class="card-testi__avatar">AM</div>
-          <div>
-            <div class="card-testi__name">Antoine Moreau</div>
-            <div class="card-testi__role">CEO — Scale-up SaaS B2B, Aix-en-Provence</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-testi">
-        <div class="card-testi__stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="card-testi__quote">
-          Après quatre mois à chercher notre Lead Data sans succès, S&arch nous a présenté deux profils en
-          dix jours. On a signé dès le lendemain du deuxième entretien. Efficacité et rigueur au rendez-vous.
-        </p>
-        <div class="card-testi__author">
-          <div class="card-testi__avatar">SL</div>
-          <div>
-            <div class="card-testi__name">Sophie Laurent</div>
-            <div class="card-testi__role">Head of Engineering — PME industrielle, Marseille</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-testi">
-        <div class="card-testi__stars">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="card-testi__quote">
-          Pas de spam, pas de profils hors-sujet. Une vraie compréhension de nos enjeux et une shortlist
-          directement exploitable. C'est simple : on travaillera encore avec S&arch pour nos prochains postes.
-        </p>
-        <div class="card-testi__author">
-          <div class="card-testi__avatar">PD</div>
-          <div>
-            <div class="card-testi__name">Pierre Durand</div>
-            <div class="card-testi__role">DRH — Groupe industriel, Aix-en-Provence</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ CTA FINAL ══════════════════════════════ -->
-<section class="section" style="padding-bottom:clamp(60px,8vw,120px);">
-  <div class="container">
-    <div class="cta-banner reveal">
+<!-- EXPERTISES -->
+<div class="section exp-bg">
+  <div class="wrap">
+    <div class="exp-hd">
       <div>
-        <div class="eyebrow" style="color:var(--honey-light);">Passez à l'action</div>
-        <h2>Prêt à recruter autrement ?</h2>
-        <p>Parlez-nous de votre besoin. On prend en charge le reste.</p>
+        <div class="eyebrow">Nos expertises</div>
+        <h2 class="h2">Spécialistes,<br><em>pas généralistes</em></h2>
       </div>
-      <div class="cta-banner__actions">
-        <a href="contact.html" class="btn btn--primary btn--lg">Confier un recrutement <span class="arrow">→</span></a>
-        <a href="candidats.html" class="btn btn--ghost-white btn--lg">Je cherche un poste</a>
+      <a href="offres.html" class="btn btn-primary">Voir toutes les offres →</a>
+    </div>
+    <div class="exp-grid">
+      <a href="expertises.html#it" class="exp-card ec-yellow">
+        <div class="exp-num">01</div>
+        <div class="exp-ico">💻</div>
+        <h3>IT &amp; Digital</h3>
+        <p>Profils techniques rares et business-critical pour vos projets stratégiques.</p>
+        <div class="exp-tags"><span class="exp-tag">Dev Fullstack</span><span class="exp-tag">DevOps</span><span class="exp-tag">Data / IA</span><span class="exp-tag">Cloud</span><span class="exp-tag">Cyber</span></div>
+      </a>
+      <a href="expertises.html#ingenierie" class="exp-card ec-dark">
+        <div class="exp-num">02</div>
+        <div class="exp-ico">⚙️</div>
+        <h3>Ingénierie</h3>
+        <p>Parler métier, comprendre les environnements et les contraintes terrain.</p>
+        <div class="exp-tags"><span class="exp-tag">R&amp;D</span><span class="exp-tag">Bureau d'études</span><span class="exp-tag">Énergie</span><span class="exp-tag">Qualité</span></div>
+      </a>
+      <a href="expertises.html#tertiaire" class="exp-card ec-white">
+        <div class="exp-num">03</div>
+        <div class="exp-ico">📊</div>
+        <h3>Tertiaire VA</h3>
+        <p>Impact business direct et organisationnel sur vos fonctions de pilotage.</p>
+        <div class="exp-tags"><span class="exp-tag">Finance</span><span class="exp-tag">Achats</span><span class="exp-tag">DAF</span><span class="exp-tag">Commerce B2B</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FACTORY -->
+<div class="section factory-bg">
+  <div class="wrap">
+    <div class="fac-grid">
+      <div class="fac-img">📸<br>Photo Oct25-07849</div>
+      <div class="fac-text">
+        <div class="eyebrow" style="color:var(--yellow)">Notre Sourcing Factory</div>
+        <h2 class="h2 h2-light" style="margin-bottom:16px">Notre objectif n'est pas<br>de vous envoyer plus de profils.</h2>
+        <p class="fac-accent">Notre objectif est de vous envoyer <span>les bons.</span></p>
+        <p>Chaque mission active notre sourcing factory : une équipe de spécialistes organisés par verticale métier, qui sourcent, qualifient et sélectionnent avec exigence.</p>
+        <div class="fac-stats">
+          <div class="fac-stat"><div class="fac-num">100%</div><div class="fac-lbl">Approche directe</div></div>
+          <div class="fac-stat"><div class="fac-num">≤3</div><div class="fac-lbl">Profils max</div></div>
+          <div class="fac-stat"><div class="fac-num">3</div><div class="fac-lbl">Verticales métiers</div></div>
+          <div class="fac-stat"><div class="fac-num">0€</div><div class="fac-lbl">Si pas de recrutement</div></div>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ═══ FOOTER ════════════════════════════════ -->
-<footer>
-  <div class="container">
-    <div class="footer__top">
-      <div class="footer__brand">
-                        <a href="index.html" class="footer-logo-wrap">
-          <svg width="36" height="36" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="rgba(240,168,48,0.15)" stroke="#F0A830" stroke-width="1.5"/>
-            <rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#F0A830" opacity="0.3"/>
-            <rect x="11" y="13.5" width="12" height="2.5" rx="1.25" fill="#F0A830" opacity="0.3"/>
-            <rect x="11" y="17" width="12" height="2.5" rx="1.25" fill="#F0A830" opacity="0.3"/>
-            <circle cx="14" cy="11" r="1.4" fill="#FAF8F3"/>
-            <circle cx="20" cy="11" r="1.4" fill="#FAF8F3"/>
-            <ellipse cx="10" cy="10" rx="4" ry="2" fill="rgba(255,255,255,0.15)" stroke="#F0A830" stroke-width="1" transform="rotate(-30 10 10)"/>
-            <ellipse cx="24" cy="10" rx="4" ry="2" fill="rgba(255,255,255,0.15)" stroke="#F0A830" stroke-width="1" transform="rotate(30 24 10)"/>
-            <path d="M13 8.5 Q11 5 8 6" stroke="#F0A830" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-            <path d="M21 8.5 Q23 5 26 6" stroke="#F0A830" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-            <path d="M15 22.5 L13 28 M19 22.5 L21 28" stroke="#F0A830" stroke-width="1.3" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <div class="footer-logo-name">S<span>&amp;</span>arch</div>
-            <div class="footer-logo-sub">by The Hive Company</div>
-          </div>
-        </a>
-        <p>Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques à forte valeur ajoutée. Basé à Aix-en-Provence, nous intervenons sur toute la région PACA et en remote.</p>
-        <div class="socials">
-          <a href="#" class="social-link" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
-              <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
-            </svg>
-          </a>
-        </div>
+<!-- PROCESS -->
+<div class="section proc-bg">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--yellow)">Notre méthode</div>
+    <h2 class="h2 h2-light">5 étapes, <em>un résultat</em></h2>
+    <div class="proc-steps">
+      <div class="pstep"><div class="ps-num ps-y">1</div><h4>Cadrage</h4><p>Comprendre le besoin réel et la culture</p></div>
+      <div class="pstep"><div class="ps-num ps-o">2</div><h4>Activation factory</h4><p>Mobiliser les spécialistes par verticale</p></div>
+      <div class="pstep"><div class="ps-num ps-y">3</div><h4>Qualification</h4><p>Entretiens poussés, compétences &amp; soft skills</p></div>
+      <div class="pstep"><div class="ps-num ps-o">4</div><h4>Shortlist</h4><p>Max 3 profils argumentés</p></div>
+      <div class="pstep"><div class="ps-num ps-y">5</div><h4>Suivi &amp; closing</h4><p>Accompagnement jusqu'à l'intégration</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODELE -->
+<div class="section mod-bg">
+  <div class="wrap">
+    <div class="mod-inner">
+      <div class="eyebrow" style="justify-content:center">Modèle économique</div>
+      <h2 class="h2" style="margin-bottom:12px">Nous fonctionnons<br><em>au succès</em></h2>
+      <p style="font-size:16px;color:var(--gray);font-weight:300">Les détails tarifaires sont communiqués lors d'un premier échange — adaptés à votre contexte et à la complexité du poste.</p>
+      <div class="mod-avs">
+        <div class="mod-av"><div class="mod-av-ico">🏆</div><h4>Aucun frais si pas de recrutement</h4><p>Vous ne payez qu'en cas de résultat. Zéro risque financier.</p></div>
+        <div class="mod-av"><div class="mod-av-ico">⚖️</div><h4>Tarif adapté à votre contexte</h4><p>Chaque mission est unique. Nos honoraires reflètent la complexité réelle.</p></div>
+        <div class="mod-av"><div class="mod-av-ico">🤝</div><h4>Engagement sur le résultat</h4><p>Notre intérêt est aligné sur le vôtre. On s'engage ensemble.</p></div>
       </div>
-      <div class="footer__col">
-        <h5>Entreprises</h5>
-        <ul>
-          <li><a href="entreprises.html">Confier un recrutement</a></li>
-          <li><a href="a-propos.html">Nos expertises</a></li>
-          <li><a href="a-propos.html#process">Notre méthode</a></li>
-          <li><a href="landing.html">Cabinet Aix-en-Provence</a></li>
-        </ul>
+      <a href="contact.html" class="btn btn-primary">Discutons de votre besoin →</a>
+    </div>
+  </div>
+</div>
+
+<!-- TÉMOIGNAGES -->
+<div class="section" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="eyebrow">Témoignages</div>
+    <h2 class="h2">Ce qu'ils disent<br><em>de S&amp;arch</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card tc-y">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-q">"S&amp;arch a trouvé notre Directeur Technique en 3 semaines. Profil parfait, intégration réussie. Un niveau d'exigence rare."</p>
+        <div class="testi-auth"><div class="testi-av">AM</div><div><div class="testi-name">Antoine Moreau</div><div class="testi-role">CEO — Scale-up SaaS, Aix-en-Provence</div></div></div>
       </div>
-      <div class="footer__col">
-        <h5>Candidats</h5>
-        <ul>
-          <li><a href="offres.html">Toutes les offres</a></li>
-          <li><a href="candidats.html">Déposer son CV</a></li>
-          <li><a href="candidats.html#faq">FAQ candidats</a></li>
-        </ul>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-q">"4 mois de galère avec d'autres cabinets. S&amp;arch nous présente 2 profils en 10 jours. On a signé le lendemain du 2e entretien."</p>
+        <div class="testi-auth"><div class="testi-av">SL</div><div><div class="testi-name">Sophie Laurent</div><div class="testi-role">Head of Engineering — PME industrielle</div></div></div>
       </div>
-      <div class="footer__col">
-        <h5>S&arch</h5>
-        <ul>
-          <li><a href="a-propos.html">Notre histoire</a></li>
-          <li><a href="a-propos.html#equipe">L'équipe</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-q">"Pas de spam. Une compréhension fine de nos enjeux et une shortlist directement exploitable. On repartira avec eux."</p>
+        <div class="testi-auth"><div class="testi-av">PD</div><div><div class="testi-name">Pierre Durand</div><div class="testi-role">DRH — Groupe industriel PACA</div></div></div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <p>© 2025 S&arch — by The Hive Company. Tous droits réservés.</p>
-      <div style="display:flex;gap:var(--space-5);">
-        <a href="#">Mentions légales</a>
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">RGPD</a>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="cta-sec">
+  <div class="wrap">
+    <h2>Prêt à recruter<br>autrement ?</h2>
+    <p>Parlons de votre besoin. On prend en charge le reste.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn" style="background:var(--cream);color:var(--black);border:2px solid var(--black);padding:16px 36px;border-radius:10px;font-size:15px;font-weight:700;box-shadow:5px 5px 0 var(--black)">Confier un recrutement →</a>
+      <a href="candidats.html" class="btn btn-ghostw">Je cherche un poste</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <a href="index.html" class="ft-logo" style="text-decoration:none">
+          <div class="ft-bee">
+            <svg width="22" height="22" viewBox="0 0 34 34" fill="none">
+              <ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#F5C842" stroke="#1A1612" stroke-width="1.5"/>
+              <rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.35"/>
+              <rect x="11" y="14" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.35"/>
+              <circle cx="14" cy="11" r="1.3" fill="#1A1612"/><circle cx="20" cy="11" r="1.3" fill="#1A1612"/>
+            </svg>
+          </div>
+          <div><div class="ft-name">S<span>&</span>arch</div><span class="ft-sub">by The Hive Company</span></div>
+        </a>
+        <p class="ft-desc">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Basé à Aix-en-Provence, on intervient sur toute la région PACA et en remote.<br><br>860 rue René Descartes · 13100 Aix-en-Provence<br>contact@search-hive.fr</p>
       </div>
+      <div class="ft-col"><h5>Entreprises</h5><ul><li><a href="contact.html">Confier un recrutement</a></li><li><a href="expertises.html">Nos expertises</a></li><li><a href="entreprises.html#methode">Notre méthode</a></li><li><a href="entreprises.html#faq">FAQ</a></li></ul></div>
+      <div class="ft-col"><h5>Candidats</h5><ul><li><a href="offres.html">Voir les offres</a></li><li><a href="candidats.html#deposer">Déposer son CV</a></li><li><a href="candidats.html#faq">FAQ candidats</a></li></ul></div>
+      <div class="ft-col"><h5>S&amp;arch</h5><ul><li><a href="a-propos.html">Notre histoire</a></li><li><a href="a-propos.html#equipe">L'équipe</a></li><li><a href="contact.html">Contact</a></li><li><a href="#" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <p>© 2025 S&amp;arch — by The Hive Company. Tous droits réservés.</p>
+      <div style="display:flex;gap:20px"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+// NAV
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+// MOBILE
+function openMob(){document.getElementById('mob').classList.add('open');document.body.style.overflow='hidden'}
+function closeMob(){document.getElementById('mob').classList.remove('open');document.body.style.overflow=''}
+// CAROUSEL
+let cur=0,anim=false,prog=0,timer=null;
+const N=3,DUR=5000,STEP=50;
+function goTo(n){
+  if(n===cur||anim)return;
+  anim=true;
+  const slides=document.querySelectorAll('.slide');
+  slides[cur].classList.remove('active');
+  slides[cur].classList.add('exit');
+  setTimeout(()=>{slides[cur].classList.remove('exit');anim=false},700);
+  cur=n;
+  slides[cur].classList.add('active');
+  updateDots();resetProg();
+}
+function next(){goTo((cur+1)%N)}
+function prev(){goTo((cur-1+N)%N)}
+function updateDots(){
+  // Mettre à jour les dots dans chaque slide
+  for(let s=0;s<N;s++){
+    const sl=document.getElementById('sl'+s);
+    if(!sl)continue;
+    sl.querySelectorAll('.cdot').forEach((d,i)=>d.classList.toggle('on',i===cur));
+    const cc=sl.querySelector('.ccount');
+    if(cc)cc.textContent=(cur+1).toString().padStart(2,'0')+' / 0'+N;
+  }
+}
+function resetProg(){
+  clearInterval(timer);prog=0;
+  for(let i=0;i<N;i++){const pb=document.getElementById('pb'+i);if(pb)pb.style.width='0'}
+  timer=setInterval(()=>{
+    prog+=(STEP/DUR)*100;
+    const pb=document.getElementById('pb'+cur);
+    if(pb)pb.style.width=Math.min(prog,100)+'%';
+    if(prog>=100)next();
+  },STEP);
+}
+resetProg();
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
+</script>
 </body>
 </html>
