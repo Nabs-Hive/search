@@ -734,3 +734,69 @@ footer {
   filter: brightness(0) invert(1);
   opacity: 0.9;
 }
+
+/* ─── Logo nav typographique ─────────────── */
+.nav__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav__logo-bee { display: flex; align-items: center; flex-shrink: 0; }
+.nav__logo-type { display: flex; flex-direction: column; }
+.nav__logo-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--black);
+}
+.nav__logo-s   { color: var(--black); }
+.nav__logo-amp { color: var(--honey); }
+.nav__logo-arch { color: var(--black); }
+.nav__logo-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-warm);
+  margin-top: 2px;
+}
+/* Sur fond sombre (hero avant scroll) : texte en blanc */
+.nav:not(.scrolled) .nav__logo-name { color: var(--cream); }
+.nav:not(.scrolled) .nav__logo-s    { color: var(--cream); }
+.nav:not(.scrolled) .nav__logo-arch { color: var(--cream); }
+.nav:not(.scrolled) .nav__logo-amp  { color: var(--honey-light); }
+.nav:not(.scrolled) .nav__logo-sub  { color: rgba(250,248,243,0.5); }
+/* Après scroll : texte sombre */
+.nav.scrolled .nav__logo-name { color: var(--black); }
+.nav.scrolled .nav__logo-s    { color: var(--black); }
+.nav.scrolled .nav__logo-arch { color: var(--black); }
+.nav.scrolled .nav__logo-amp  { color: var(--honey); }
+.nav.scrolled .nav__logo-sub  { color: var(--gray-warm); }
+
+/* ─── Logo footer ────────────────────────── */
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.footer-logo-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--cream);
+  line-height: 1;
+}
+.footer-logo-name span { color: var(--honey-light); }
+.footer-logo-sub {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(250,248,243,0.35);
+  margin-top: 3px;
+}
