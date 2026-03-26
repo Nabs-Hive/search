@@ -1,0 +1,13 @@
+PHOTOS À DÉPOSER ICI
+====================
+
+Glissez vos 6 photos ici en les renommant exactement comme suit :
+
+hero-team.jpg       ← The Hive-Shooting-Jan25-01712.jpg  (hero accueil)
+culture-laugh.jpg   ← The Hive-Shooting-Jan25-01661.jpg  (bloc ADN)
+contact-call.jpg    ← The Hive-Shooting-Jan25-01395.jpg  (sourcing factory)
+experts-walk.jpg    ← The Hive-Shooting-Oct25-07987.jpg  (expertises)
+team-trio.jpg       ← The Hive-Shooting-Oct25-07849.jpg  (entreprises)
+team-exchange.jpg   ← The Hive-Shooting-Oct25-07794.jpg  (à propos)
+
+Le site fonctionne sans elles (zones grises à la place).
