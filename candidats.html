@@ -42,7 +42,7 @@
   <div class="grid-3">
     <div class="card card--yellow reveal"><div style="font-size:32px;margin-bottom:14px">🎯</div><h3 style="font-size:18px;margin-bottom:8px">Opportunités ciblées</h3><p style="font-size:13px;color:rgba(26,22,18,.7);line-height:1.7">Pas de masse, pas de spam. Chaque mise en relation est réfléchie et qualifiée.</p></div>
     <div class="card reveal reveal-delay-1"><div style="font-size:32px;margin-bottom:14px">❤️</div><h3 style="font-size:18px;margin-bottom:8px">Accompagnement humain</h3><p style="font-size:13px;color:var(--gray);line-height:1.7">Un interlocuteur dédié, qui connaît votre métier et défend votre candidature.</p></div>
-    <div class="card reveal reveal-delay-2"><div style="font-size:32px;margin-bottom:14px">🔒</div><h3 style="font-size:18px;margin-bottom:8px">Confidentialité totale</h3><p style="font-size:13px;color:var(--gray);line-height:1.7">Votre CV ne sera jamais partagé sans votre accord préalable.</p></div>
+    <div class="card card--honey-pale reveal reveal-delay-2"><div style="font-size:32px;margin-bottom:14px">🔒</div><h3 style="font-size:18px;margin-bottom:8px">Confidentialité totale</h3><p style="font-size:13px;color:var(--gray);line-height:1.7">Votre CV ne sera jamais partagé sans votre accord préalable.</p></div>
   </div>
 </div></section>
 
@@ -67,8 +67,490 @@
         <div style="margin-bottom:14px"><label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);display:block;margin-bottom:6px">Email *</label><input type="email" name="email" required style="width:100%;border:2px solid var(--lgray);border-radius:8px;padding:10px 14px;font-size:14px;outline:none" onfocus="this.style.borderColor='var(--honey)'" onblur="this.style.borderColor='var(--lgray)'"></div>
         <div style="margin-bottom:14px"><label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);display:block;margin-bottom:6px">Métier / expertise *</label><input type="text" name="metier" required placeholder="Ex: Lead Dev React, Ingénieur R&D..." style="width:100%;border:2px solid var(--lgray);border-radius:8px;padding:10px 14px;font-size:14px;outline:none" onfocus="this.style.borderColor='var(--honey)'" onblur="this.style.borderColor='var(--lgray)'"></div>
         <div style="margin-bottom:14px"><label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);display:block;margin-bottom:6px">Votre projet</label><textarea name="projet" rows="3" placeholder="Type de poste recherché, zone géographique, disponibilité, prétentions..." style="width:100%;border:2px solid var(--lgray);border-radius:8px;padding:10px 14px;font-size:14px;outline:none;resize:none" onfocus="this.style.borderColor='var(--honey)'" onblur="this.style.borderColor='var(--lgray)'"></textarea></div>
-        <div style="margin-bottom:20px"><label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);display:block;margin-bottom:6px">LinkedIn ou lien CV</label><input type="url" name="linkedin" placeholder="https://" style="width:100%;border:2px solid var(--lgray);border-radius:8px;padding:10px 14px;font-size:14px;outline:none" onfocus="this.style.borderColor='var(--honey)'" onblur="this.style.borderColor='var(--lgray)'"></div>
-        <button type="submit" class="btn btn--primary" style="width:100%">Envoyer ma candidature →</button>
+        
+<!-- MINI-JEU ABEILLE -->
+<div style="margin-bottom:24px">
+  <div style="font-size:13px;font-weight:700;color:var(--honey);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">
+    🐝 Avant d'envoyer — Un mini-jeu rapide !
+  </div>
+  <div style="font-size:12px;color:var(--gray);margin-bottom:12px;line-height:1.6">
+    Guide l'abeille jusqu'à la ruche pour débloquer l'envoi de ta candidature. 30 secondes, promis !
+  </div>
+  <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',Arial,sans-serif;background:#FAF6EE;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:16px}
+.wrap{width:100%;max-width:560px;background:#fff;border:2px solid #1A1612;border-radius:20px;overflow:hidden;box-shadow:6px 6px 0 #1A1612}
+.hdr{background:#1A1612;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.hdr-title{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:900;color:#FAF6EE}
+.hdr-title span{color:#F5C842}
+.pill{display:flex;align-items:center;gap:6px;background:rgba(245,200,66,.12);border:1px solid rgba(245,200,66,.3);border-radius:100px;padding:4px 14px}
+.tval{font-size:16px;font-weight:700;color:#F5C842;min-width:26px;text-align:center}
+.tval.red{color:#E74C3C}
+.instr{background:#F5C842;border-bottom:2px solid #1A1612;padding:10px 20px;font-size:13px;font-weight:600;color:#1A1612;text-align:center}
+.czone{position:relative;line-height:0}
+#gc{display:block;width:100%;touch-action:none}
+.scr{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 20px}
+.scr.off{display:none!important}
+.s-start{background:rgba(250,246,238,.97)}
+.s-win{background:rgba(39,174,96,.94)}
+.s-lose{background:rgba(231,76,60,.91)}
+.big-e{font-size:54px;margin-bottom:10px;display:block;animation:flt 2s ease-in-out infinite}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.scr-h{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:900;line-height:1.1;margin-bottom:10px;color:#1A1612}
+.s-win .scr-h,.s-lose .scr-h{color:#fff}
+.scr-p{font-size:13px;line-height:1.7;margin-bottom:22px;color:#555;font-weight:300}
+.s-win .scr-p,.s-lose .scr-p{color:rgba(255,255,255,.9)}
+.btn{background:#D4820A;color:#fff;padding:13px 30px;border-radius:10px;font-size:14px;font-weight:700;border:2px solid #1A1612;box-shadow:4px 4px 0 #1A1612;cursor:pointer;font-family:'DM Sans',Arial,sans-serif;-webkit-appearance:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #1A1612}
+.btn.grn{background:#27AE60}
+.sbar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:#FAF6EE;border-top:2px solid #1A1612}
+.sbl{font-size:11px;color:#D4820A;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.sbv{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:900;color:#1A1612}
+.lives{display:flex;gap:3px}
+.lv{font-size:18px;transition:opacity .3s}
+.lv.dead{opacity:.2;filter:grayscale(1)}
+.sz{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-top:2px solid #1A1612;background:#FAF6EE;gap:12px;flex-wrap:wrap}
+.gt{font-size:12px;font-weight:700;color:#D4820A}
+.gh{font-size:11px;color:#A08060;margin-top:2px}
+.sb2{background:#D4820A;color:#fff;padding:11px 22px;border-radius:10px;font-size:13px;font-weight:700;border:2px solid #1A1612;box-shadow:4px 4px 0 #1A1612;cursor:pointer;font-family:'DM Sans',Arial,sans-serif;-webkit-appearance:none;opacity:.3;pointer-events:none;transition:all .2s;white-space:nowrap}
+.sb2.on{opacity:1;pointer-events:auto}
+.sb2.on:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #1A1612}
+</style>
+  <div id="game-container" style="border:2px solid var(--black);border-radius:16px;overflow:hidden;box-shadow:4px 4px 0 var(--black)">
+    
+<div class="wrap">
+  <div class="hdr">
+    <div class="hdr-title">🐝 S<span>&amp;</span>arch — La ruche</div>
+    <div class="pill"><span>⏱</span><span class="tval" id="tv">30</span></div>
+  </div>
+  <div class="instr">Déplacez la souris / doigt pour guider l'abeille — collecte 5 fleurs 🌸 puis rentre à la ruche !</div>
+  <div class="czone">
+    <canvas id="gc"></canvas>
+    <div class="scr s-start" id="sS">
+      <span class="big-e">🐝</span>
+      <div class="scr-h">Aide l'abeille<br>à rentrer à la ruche !</div>
+      <div class="scr-p">Collecte 5 fleurs 🌸 et évite les frelons 🦟<br>Tu as 30 secondes !</div>
+      <button class="btn" id="bS">Allons-y ! →</button>
+    </div>
+    <div class="scr s-win off" id="sW">
+      <span class="big-e">🏆</span>
+      <div class="scr-h">Bravo, mission accomplie !</div>
+      <div class="scr-p">L'abeille est rentrée à la ruche !<br>Votre candidature peut être envoyée.</div>
+      <button class="btn grn" id="bWS">Envoyer ma candidature →</button>
+    </div>
+    <div class="scr s-lose off" id="sL">
+      <span class="big-e">😵</span>
+      <div class="scr-h">Aïe ! Retente ta chance</div>
+      <div class="scr-p">L'abeille n'a pas trouvé son chemin...<br>C'est rapide, réessaie !</div>
+      <button class="btn" id="bR">Réessayer</button>
+    </div>
+  </div>
+  <div class="sbar">
+    <div><div class="sbl">Pollen</div><div class="sbv"><span id="pv">0</span> / 5 🌸</div></div>
+    <div class="lives" id="lv"><span class="lv">❤️</span><span class="lv">❤️</span><span class="lv">❤️</span></div>
+    <div><div class="sbl">Score</div><div class="sbv" id="sv">0</div></div>
+  </div>
+  <div class="sz">
+    <div><div class="gt" id="gm">🔒 Complète le jeu pour déverrouiller l'envoi</div><div class="gh">Guide l'abeille jusqu'à la ruche !</div></div>
+    <button class="sb2" id="sb">Envoyer ma candidature →</button>
+  </div>
+</div>
+<script>
+(function(){
+'use strict';
+var C=document.getElementById('gc'),ctx=C.getContext('2d');
+var W=560,H=300;
+C.width=W;C.height=H;
+C.style.width='100%';
+
+var state='idle',tmr=30,pollen=0,score=0,lives=3;
+var raf=null,tiv=null,unlocked=false,hcool=0,flashR=0,flashG=0;
+var mouse={x:100,y:H/2};
+var bee={x:100,y:H/2,ang:0,wing:0};
+var hive={x:W-76,y:H/2-28,w:60,h:60};
+var flowers=[],hornets=[],parts=[],trail=[];
+var hornetT=0,lastTs=0;
+
+function rnd(a,b){return a+Math.random()*(b-a);}
+function dst(ax,ay,bx,by){var dx=ax-bx,dy=ay-by;return Math.sqrt(dx*dx+dy*dy);}
+
+// Rounded rect compatible tous navigateurs
+function rr(c,x,y,w,h,r){
+  c.beginPath();
+  c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);
+  c.lineTo(x+w,y+h-r);c.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+  c.lineTo(x+r,y+h);c.quadraticCurveTo(x,y+h,x,y+h-r);
+  c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);
+  c.closePath();
+}
+
+function initF(){
+  flowers=[];
+  var em=['🌸','🌼','🌺','🌻','💐'];
+  for(var i=0;i<5;i++) flowers.push({x:rnd(70,W-150),y:rnd(28,H-58),r:14,done:false,bob:Math.random()*Math.PI*2,e:em[i]});
+}
+
+function spawnH(){
+  if(hornets.length>=4)return;
+  var fr=Math.random()<0.5;
+  hornets.push({x:fr?W+20:-20,y:rnd(28,H-60),vx:fr?-rnd(1.3,2.2):rnd(1.3,2.2),vy:rnd(-0.8,0.8),ph:Math.random()*Math.PI*2,r:14});
+}
+
+function burst(x,y,col,n){
+  n=n||8;
+  for(var i=0;i<n;i++){
+    var a=(Math.PI*2/n)*i+Math.random()*0.4,sp=rnd(2,4);
+    parts.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp,life:1,dec:rnd(0.03,0.06),r:rnd(3,5),col:col});
+  }
+}
+
+function updateHUD(){
+  document.getElementById('pv').textContent=pollen;
+  document.getElementById('sv').textContent=score;
+  var ls=document.querySelectorAll('.lv');
+  for(var i=0;i<ls.length;i++) ls[i].className='lv'+(i>=lives?' dead':'');
+}
+
+function showScr(id){
+  var ids=['sS','sW','sL'];
+  for(var i=0;i<ids.length;i++){
+    var el=document.getElementById(ids[i]);
+    if(ids[i]===id) el.classList.remove('off'); else el.classList.add('off');
+  }
+}
+function hideAll(){['sS','sW','sL'].forEach(function(id){document.getElementById(id).classList.add('off');});}
+
+function reset(){
+  clearInterval(tiv);if(raf)cancelAnimationFrame(raf);
+  state='idle';tmr=30;pollen=0;score=0;lives=3;hcool=0;unlocked=false;flashR=0;flashG=0;
+  bee.x=100;bee.y=H/2;bee.ang=0;bee.wing=0;
+  mouse.x=100;mouse.y=H/2;
+  hornets=[];parts=[];trail=[];hornetT=0;
+  initF();updateHUD();
+  document.getElementById('gm').textContent='🔒 Complète le jeu pour déverrouiller l\'envoi';
+  document.getElementById('sb').className='sb2';
+  showScr('sS');
+  drawIdle();
+}
+
+function winGame(){
+  state='won';clearInterval(tiv);
+  burst(hive.x+hive.w/2,hive.y+hive.h/2,'#F5C842',20);
+  burst(hive.x+hive.w/2,hive.y+hive.h/2,'#D4820A',10);
+  setTimeout(function(){
+    showScr('sW');
+    unlocked=true;
+    document.getElementById('gm').textContent='✅ Bravo ! Candidature déverrouillée';
+    document.getElementById('sb').className='sb2 on';
+  },700);
+}
+function loseGame(){
+  if(state!=='playing')return;
+  state='lost';clearInterval(tiv);
+  setTimeout(function(){showScr('sL');},350);
+}
+function doSubmit(){
+  if(!unlocked)return;
+  alert('🐝 Candidature envoyée ! Bienvenue dans la ruche S&arch !');
+}
+
+// ── DRAW ──────────────────────────────────
+function drawBg(){
+  var g=ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#B8DFF8');g.addColorStop(0.65,'#87CEEB');
+  g.addColorStop(0.82,'#C8EAC0');g.addColorStop(1,'#5CB85C');
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  // Nuages
+  ctx.fillStyle='rgba(255,255,255,0.72)';
+  var cl=[[70,34,28],[215,52,22],[375,26,26],[492,48,20]];
+  for(var i=0;i<cl.length;i++){
+    var cx=cl[i][0],cy=cl[i][1],r=cl[i][2];
+    ctx.beginPath();
+    ctx.arc(cx,cy,r,0,Math.PI*2);ctx.arc(cx+r*.75,cy-r*.3,r*.7,0,Math.PI*2);
+    ctx.arc(cx-r*.65,cy-r*.2,r*.55,0,Math.PI*2);ctx.fill();
+  }
+  // Sol
+  ctx.fillStyle='#5CB85C';ctx.fillRect(0,H-22,W,22);
+  ctx.strokeStyle='#4CAF50';ctx.lineWidth=1.5;
+  for(var gx=8;gx<W;gx+=15){
+    ctx.beginPath();ctx.moveTo(gx,H-22);
+    ctx.quadraticCurveTo(gx-3,H-31,gx+2,H-37);ctx.stroke();
+  }
+}
+
+function drawHive(){
+  var hx=hive.x,hy=hive.y,hw=hive.w,hh=hive.h;
+  var cx=hx+hw/2;
+  // Corps
+  ctx.fillStyle='#F5C842';ctx.strokeStyle='#1A1612';ctx.lineWidth=2;
+  rr(ctx,hx,hy+10,hw,hh-10,8);ctx.fill();ctx.stroke();
+  // Rayures
+  ctx.save();rr(ctx,hx,hy+10,hw,hh-10,8);ctx.clip();
+  ctx.fillStyle='#D4820A';ctx.globalAlpha=0.25;
+  ctx.fillRect(hx,hy+16,hw,7);ctx.fillRect(hx,hy+28,hw,7);ctx.fillRect(hx,hy+40,hw,7);
+  ctx.globalAlpha=1;ctx.restore();
+  // Toit
+  ctx.fillStyle='#D4820A';ctx.strokeStyle='#1A1612';ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(hx-4,hy+12);ctx.lineTo(cx,hy-2);ctx.lineTo(hx+hw+4,hy+12);ctx.closePath();ctx.fill();ctx.stroke();
+  // Entrée
+  ctx.fillStyle='#1A1612';
+  ctx.beginPath();ctx.ellipse(cx,hy+hh-4,8,5,0,0,Math.PI*2);ctx.fill();
+  // Hex déco
+  ctx.strokeStyle='rgba(26,22,18,0.18)';ctx.lineWidth=1;
+  var hp=[[cx-9,hy+hh/2-6],[cx+9,hy+hh/2-6],[cx,hy+hh/2+6]];
+  for(var h2=0;h2<hp.length;h2++){
+    ctx.beginPath();
+    for(var v=0;v<6;v++){
+      var ang2=(Math.PI/3)*v-Math.PI/6;
+      var px=hp[h2][0]+Math.cos(ang2)*5.5,py=hp[h2][1]+Math.sin(ang2)*5.5;
+      if(v===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);
+    }
+    ctx.closePath();ctx.stroke();
+  }
+}
+
+function drawBeeAt(x,y,ang,wing){
+  ctx.save();ctx.translate(x,y);ctx.rotate(ang);
+  // Ombre
+  ctx.save();ctx.globalAlpha=0.12;ctx.fillStyle='#000';
+  ctx.beginPath();ctx.ellipse(2,14,8,3,0,0,Math.PI*2);ctx.fill();ctx.restore();
+  // Ailes
+  var wf=Math.sin(wing)*0.35;
+  ctx.save();ctx.globalAlpha=0.8;ctx.fillStyle='rgba(255,255,255,0.88)';ctx.strokeStyle='#D4820A';ctx.lineWidth=0.8;
+  ctx.save();ctx.translate(-10,-8);ctx.rotate(-0.4+wf);
+  ctx.beginPath();ctx.ellipse(0,0,11,7,0,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.restore();
+  ctx.save();ctx.translate(10,-8);ctx.rotate(0.4-wf);
+  ctx.beginPath();ctx.ellipse(0,0,11,7,0,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.restore();
+  ctx.restore();
+  // Corps
+  ctx.fillStyle='#F5C842';ctx.strokeStyle='#1A1612';ctx.lineWidth=1.5;
+  ctx.beginPath();ctx.ellipse(0,1,9,13,0,0,Math.PI*2);ctx.fill();ctx.stroke();
+  // Rayures
+  ctx.strokeStyle='rgba(26,22,18,0.32)';ctx.lineWidth=2.4;
+  var sr=[-4,1,6];
+  for(var s=0;s<sr.length;s++){
+    var yy=sr[s],hw2=Math.sqrt(Math.max(0,81-yy*yy))*9/13;
+    ctx.beginPath();ctx.moveTo(-hw2,yy);ctx.lineTo(hw2,yy);ctx.stroke();
+  }
+  // Tête
+  ctx.fillStyle='#F5C842';ctx.strokeStyle='#1A1612';ctx.lineWidth=1.5;
+  ctx.beginPath();ctx.arc(0,-12,7,0,Math.PI*2);ctx.fill();ctx.stroke();
+  // Yeux
+  ctx.fillStyle='#1A1612';
+  ctx.beginPath();ctx.arc(-3,-13,1.7,0,Math.PI*2);ctx.fill();
+  ctx.beginPath();ctx.arc(3,-13,1.7,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#fff';
+  ctx.beginPath();ctx.arc(-2.2,-13.5,0.6,0,Math.PI*2);ctx.fill();
+  ctx.beginPath();ctx.arc(3.8,-13.5,0.6,0,Math.PI*2);ctx.fill();
+  // Sourire
+  ctx.strokeStyle='#1A1612';ctx.lineWidth=1;
+  ctx.beginPath();ctx.arc(0,-11,3,0.2,Math.PI-0.2);ctx.stroke();
+  // Antennes
+  ctx.strokeStyle='#1A1612';ctx.lineWidth=1.2;
+  ctx.beginPath();ctx.moveTo(-3,-18);ctx.quadraticCurveTo(-7,-26,-9,-29);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(3,-18);ctx.quadraticCurveTo(7,-26,9,-29);ctx.stroke();
+  ctx.fillStyle='#D4820A';
+  ctx.beginPath();ctx.arc(-9,-29,2.5,0,Math.PI*2);ctx.fill();
+  ctx.beginPath();ctx.arc(9,-29,2.5,0,Math.PI*2);ctx.fill();
+  // Dard
+  ctx.strokeStyle='#1A1612';ctx.lineWidth=1.2;
+  ctx.beginPath();ctx.moveTo(-1.5,14);ctx.lineTo(-2,20);ctx.lineTo(0,23);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(1.5,14);ctx.lineTo(2,20);ctx.lineTo(0,23);ctx.stroke();
+  ctx.restore();
+}
+
+// ── IDLE SCREEN ──────────────────────────
+function drawIdle(){
+  if(state!=='idle')return;
+  ctx.clearRect(0,0,W,H);drawBg();
+  ctx.save();
+  if(typeof ctx.shadowColor!=='undefined'){ctx.shadowColor='#F5C842';ctx.shadowBlur=10;}
+  drawHive();ctx.restore();
+  var by=H/2+Math.sin(Date.now()*0.002)*8;
+  drawBeeAt(W/2,by,0,Date.now()*0.03);
+  // Fleurs idle
+  var em2=['🌸','🌼','🌺','🌻','💐'];
+  var fpos=[[120,80],[240,160],[140,200],[320,60],[200,130]];
+  ctx.font='22px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+  for(var i=0;i<fpos.length;i++){
+    var bob=Math.sin(Date.now()*0.002+i)*4;
+    ctx.fillText(em2[i],fpos[i][0],fpos[i][1]+bob);
+  }
+  requestAnimationFrame(drawIdle);
+}
+
+// ── GAME LOOP ────────────────────────────
+function loop(ts){
+  if(state!=='playing')return;
+  raf=requestAnimationFrame(loop);
+  var dt=Math.min((ts-lastTs)/16.67,3);lastTs=ts;
+  ctx.clearRect(0,0,W,H);drawBg();
+
+  // Abeille movement
+  var dx=mouse.x-bee.x,dy=mouse.y-bee.y;
+  bee.x+=dx*0.12;bee.y+=dy*0.12;
+  bee.x=Math.max(12,Math.min(W-12,bee.x));
+  bee.y=Math.max(14,Math.min(H-34,bee.y));
+  if(Math.abs(dx)>3||Math.abs(dy)>3) bee.ang=Math.atan2(dy,dx)*0.22;
+  bee.wing+=0.48*dt;
+
+  // Trail
+  trail.push({x:bee.x,y:bee.y,life:1});
+  if(trail.length>16)trail.shift();
+  for(var t=0;t<trail.length;t++){
+    trail[t].life-=0.07;
+    if(trail[t].life<=0)continue;
+    ctx.save();ctx.globalAlpha=trail[t].life*0.28;ctx.fillStyle='#F5C842';
+    ctx.beginPath();ctx.arc(trail[t].x,trail[t].y,3.5*trail[t].life,0,Math.PI*2);ctx.fill();ctx.restore();
+  }
+
+  // Ruche
+  ctx.save();
+  if(typeof ctx.shadowColor!=='undefined'){
+    ctx.shadowColor=pollen>=5?'#27AE60':'#F5C842';
+    ctx.shadowBlur=(pollen>=5?14:6)+Math.sin(ts*0.004)*5;
+  }
+  drawHive();ctx.restore();
+
+  // Fleurs
+  var t2=ts*0.002;
+  ctx.font='24px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+  for(var fi=0;fi<flowers.length;fi++){
+    if(flowers[fi].done)continue;
+    var bob=Math.sin(t2+flowers[fi].bob)*4;
+    ctx.fillText(flowers[fi].e,flowers[fi].x,flowers[fi].y+bob);
+  }
+
+  // Frelons
+  hornetT+=dt;if(hornetT>95){spawnH();hornetT=0;}
+  ctx.font='24px serif';ctx.textAlign='center';ctx.textBaseline='middle';
+  for(var hi=hornets.length-1;hi>=0;hi--){
+    var h=hornets[hi];
+    h.x+=h.vx*dt;h.ph+=0.05*dt;h.y+=Math.sin(h.ph)*1.6;
+    if(h.x<-50||h.x>W+50){hornets.splice(hi,1);continue;}
+    ctx.fillText('🦟',h.x,h.y);
+  }
+
+  // Bee
+  drawBeeAt(bee.x,bee.y,bee.ang,bee.wing);
+
+  // Curseur
+  ctx.save();ctx.globalAlpha=0.22;ctx.strokeStyle='#D4820A';ctx.lineWidth=1.5;
+  ctx.beginPath();ctx.arc(mouse.x,mouse.y,7,0,Math.PI*2);ctx.stroke();ctx.restore();
+
+  // Particles
+  for(var pi=parts.length-1;pi>=0;pi--){
+    var p=parts[pi];
+    p.x+=p.vx*dt;p.y+=p.vy*dt;p.vy+=0.1*dt;p.life-=p.dec*dt;
+    if(p.life<=0){parts.splice(pi,1);continue;}
+    ctx.save();ctx.globalAlpha=p.life;ctx.fillStyle=p.col;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r*p.life,0,Math.PI*2);ctx.fill();ctx.restore();
+  }
+
+  // Flashes
+  if(flashR>0){ctx.save();ctx.globalAlpha=flashR*0.28;ctx.fillStyle='#E74C3C';ctx.fillRect(0,0,W,H);ctx.restore();flashR-=0.08*dt;}
+  if(flashG>0){ctx.save();ctx.globalAlpha=flashG*0.2;ctx.fillStyle='#27AE60';ctx.fillRect(0,0,W,H);ctx.restore();flashG-=0.1*dt;}
+
+  // Timer bar
+  ctx.fillStyle=tmr>12?'#27AE60':tmr>6?'#F5C842':'#E74C3C';
+  ctx.fillRect(0,H-5,(tmr/30)*W,5);
+
+  // Message "rentre !"
+  if(pollen>=5){
+    ctx.save();ctx.font='bold 13px DM Sans,Arial,sans-serif';
+    ctx.fillStyle='#27AE60';ctx.textAlign='center';ctx.textBaseline='top';
+    ctx.fillText('Rentre à la ruche ! 🏠',W/2,8);ctx.restore();
+  }
+
+  // ── COLLISIONS ──
+  if(hcool>0)hcool-=dt;
+
+  // Fleurs
+  for(var fi2=0;fi2<flowers.length;fi2++){
+    if(flowers[fi2].done)continue;
+    var bob2=Math.sin(t2+flowers[fi2].bob)*4;
+    if(dst(bee.x,bee.y,flowers[fi2].x,flowers[fi2].y+bob2)<flowers[fi2].r+12){
+      flowers[fi2].done=true;pollen++;score+=100;flashG=1;
+      burst(flowers[fi2].x,flowers[fi2].y+bob2,'#F5C842',10);
+      updateHUD();
+    }
+  }
+
+  // Frelons
+  if(hcool<=0){
+    for(var hi2=hornets.length-1;hi2>=0;hi2--){
+      if(dst(bee.x,bee.y,hornets[hi2].x,hornets[hi2].y)<hornets[hi2].r+10){
+        hornets.splice(hi2,1);lives--;hcool=55;flashR=1;
+        burst(bee.x,bee.y,'#E74C3C',8);updateHUD();
+        if(lives<=0){loseGame();return;}
+        break;
+      }
+    }
+  }
+
+  // Ruche
+  if(pollen>=5){
+    if(dst(bee.x,bee.y,hive.x+hive.w/2,hive.y+hive.h/2)<36){winGame();return;}
+  }
+}
+
+// ── START ────────────────────────────────
+function startGame(){
+  hideAll();initF();
+  state='playing';tmr=30;lastTs=performance.now();
+  tiv=setInterval(function(){
+    if(state!=='playing'){clearInterval(tiv);return;}
+    tmr--;
+    var el=document.getElementById('tv');
+    el.textContent=tmr;
+    el.className=tmr<=7?'tval red':'tval';
+    if(tmr<=0){clearInterval(tiv);loseGame();}
+  },1000);
+  raf=requestAnimationFrame(loop);
+}
+
+// ── INPUT ────────────────────────────────
+function getXY(e){
+  var r=C.getBoundingClientRect(),sx=W/r.width,sy=H/r.height;
+  return{x:(e.clientX-r.left)*sx,y:(e.clientY-r.top)*sy};
+}
+C.addEventListener('mousemove',function(e){var p=getXY(e);mouse.x=p.x;mouse.y=p.y;});
+C.addEventListener('touchstart',function(e){e.preventDefault();var p=getXY(e.touches[0]);mouse.x=p.x;mouse.y=p.y;},{passive:false});
+C.addEventListener('touchmove',function(e){e.preventDefault();var p=getXY(e.touches[0]);mouse.x=p.x;mouse.y=p.y;},{passive:false});
+
+// ── BOUTONS ──────────────────────────────
+document.getElementById('bS').addEventListener('click',function(){startGame();});
+document.getElementById('bR').addEventListener('click',function(){reset();setTimeout(startGame,50);});
+document.getElementById('bWS').addEventListener('click',function(){document.getElementById('sW').classList.add('off');doSubmit();});
+document.getElementById('sb').addEventListener('click',function(){doSubmit();});
+
+// ── INIT ─────────────────────────────────
+initF();updateHUD();drawIdle();
+
+}());
+
+// Connecter le mini-jeu au formulaire candidats
+window.addEventListener('load', function() {
+  // Surveiller le déverrouillage du jeu
+  var observer = new MutationObserver(function() {
+    var gameBtn = document.querySelector('#game-container .sb2.on');
+    var mainBtn = document.getElementById('mainSubmitBtn');
+    if (gameBtn && mainBtn) {
+      mainBtn.style.opacity = '1';
+      mainBtn.style.pointerEvents = 'auto';
+    }
+  });
+  var container = document.getElementById('game-container');
+  if (container) observer.observe(container, {subtree:true, attributes:true, attributeFilter:['class']});
+});
+</script>
+
+  </div>
+</div>
+<!-- FIN MINI-JEU -->
+
+<div style="margin-bottom:20px"><label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--gray);display:block;margin-bottom:6px">LinkedIn ou lien CV</label><input type="url" name="linkedin" placeholder="https://" style="width:100%;border:2px solid var(--lgray);border-radius:8px;padding:10px 14px;font-size:14px;outline:none" onfocus="this.style.borderColor='var(--honey)'" onblur="this.style.borderColor='var(--lgray)'"></div>
+        <button type="submit" class="btn btn--primary" style="width:100%;opacity:.35;pointer-events:none" id="mainSubmitBtn">Envoyer ma candidature →</button>
         <p style="font-size:11px;color:var(--gray);text-align:center;margin-top:10px">Vos données ne seront jamais partagées sans votre accord.</p>
       </form>
     </div>
@@ -83,7 +565,7 @@
           <div class="footer__bee"><svg width="22" height="22" viewBox="0 0 34 34" fill="none"><ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#F5C842" stroke="#1A1612" stroke-width="1.5"/><rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.3"/><rect x="11" y="14" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.3"/><circle cx="14" cy="11" r="1.3" fill="#1A1612"/><circle cx="20" cy="11" r="1.3" fill="#1A1612"/></svg></div>
           <div><div class="footer__brand-name">S<span>&amp;</span>arch</div><span class="footer__brand-sub">by The Hive Company</span></div>
         </div>
-        <p class="footer__desc">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Basé à Aix-en-Provence, on intervient sur toute la région PACA et en remote.<br><br>860 rue René Descartes · 13100 Aix-en-Provence<br>contact@search-hive.fr</p>
+        <p class="footer__desc">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Basé à Aix-en-Provence, on intervient sur toute la région PACA et en remote.<br><br>860 rue René Descartes · 13100 Aix-en-Provence<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9dfef2f3e9fcfee9ddeef8fceffef5b0f5f4ebf8b3fbef">[email&#160;protected]</a></p>
       </div>
       <div class="footer__col"><h5>Entreprises</h5><a href="contact.html">Confier un recrutement</a><a href="expertises.html">Nos expertises</a><a href="entreprises.html">Notre méthode</a><a href="entreprises.html#faq">FAQ</a></div>
       <div class="footer__col"><h5>Candidats</h5><a href="offres.html">Voir les offres</a><a href="candidats.html">Déposer son CV</a><a href="candidats.html#faq">FAQ candidats</a></div>
@@ -95,4 +577,4 @@
     </div>
   </div>
 </footer>
-<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}window.addEventListener('scroll',()=>{document.querySelector('.nav').classList.toggle('scrolled',window.scrollY>40)});const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('revealed')})},{threshold:0.1});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));</script></body></html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}window.addEventListener('scroll',()=>{document.querySelector('.nav').classList.toggle('scrolled',window.

@@ -1,4 +1,52 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Offres d'emploi IT, Ingénierie &amp; Fonctions stratégiques | S&arch</title><meta name="description" content="Découvrez les offres d'emploi S&arch en IT, ingénierie et fonctions tertiaires. Postes en CDI sur Aix-en-Provence, Marseille et en remote."><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/components.css"><style>.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.revealed{opacity:1;transform:none}.filter-btn{padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;border:2px solid var(--black);background:var(--cream);color:var(--black);cursor:pointer;transition:all .2s;box-shadow:2px 2px 0 var(--black)}.filter-btn.active,.filter-btn:hover{background:var(--honey);color:#fff;border-color:var(--honey)}</style></head><body><nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__logo"><div class="nav__logo-bee"><svg width="26" height="26" viewBox="0 0 34 34" fill="none">
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Offres d'emploi IT, Ingénierie &amp; Fonctions stratégiques | S&arch</title><meta name="description" content="Découvrez les offres d'emploi S&arch en IT, ingénierie et fonctions tertiaires. Postes en CDI sur Aix-en-Provence, Marseille et en remote."><link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/components.css"><style>.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.revealed{opacity:1;transform:none}.filter-btn{padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;border:2px solid var(--black);background:var(--cream);color:var(--black);cursor:pointer;transition:all .2s;box-shadow:2px 2px 0 var(--black)}.filter-btn.active,.filter-btn:hover{background:var(--honey);color:#fff;border-color:var(--honey)}
+/* ── Surbrillance lettres titres offres ── */
+.tl-title { cursor:default; }
+.tl-sp {
+  display:inline-block;
+  transition:color .15s, transform .15s;
+  transition-delay:var(--i,0ms);
+}
+.offre-card:hover .tl-sp {
+  color:var(--honey);
+  transform:translateY(-2px);
+}
+.offre-card:hover .tl-sp:nth-child(1){--i:0ms}
+.offre-card:hover .tl-sp:nth-child(2){--i:20ms}
+.offre-card:hover .tl-sp:nth-child(3){--i:40ms}
+.offre-card:hover .tl-sp:nth-child(4){--i:60ms}
+.offre-card:hover .tl-sp:nth-child(5){--i:80ms}
+.offre-card:hover .tl-sp:nth-child(6){--i:100ms}
+.offre-card:hover .tl-sp:nth-child(7){--i:120ms}
+.offre-card:hover .tl-sp:nth-child(8){--i:140ms}
+.offre-card:hover .tl-sp:nth-child(9){--i:160ms}
+.offre-card:hover .tl-sp:nth-child(10){--i:180ms}
+.offre-card:hover .tl-sp:nth-child(n+11){--i:200ms}
+
+/* ── Carte offre ── */
+.offre-card{
+  background:#fff;border:2px solid var(--black);border-radius:16px;
+  padding:20px 22px;box-shadow:4px 4px 0 var(--black);
+  transition:transform .2s,box-shadow .2s;
+}
+.offre-card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--black)}
+.offre-top{display:flex;align-items:flex-start;gap:14px}
+.offre-icon{width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:2px 2px 0 var(--black);flex-shrink:0}
+.offre-info{flex:1;min-width:0}
+.offre-titre{font-size:16px;font-weight:700;margin-bottom:8px;word-break:break-word}
+.offre-tags{display:flex;flex-wrap:wrap;gap:6px}
+.offre-toggle{
+  background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;
+  padding:6px 14px;font-size:12px;font-weight:700;color:var(--honey);
+  cursor:pointer;white-space:nowrap;box-shadow:2px 2px 0 var(--black);
+  font-family:'DM Sans',Arial,sans-serif;flex-shrink:0;align-self:flex-start;
+  transition:all .15s;
+}
+.offre-toggle:hover,.offre-toggle.open{background:var(--honey);color:#fff;transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--black)}
+.offre-detail{display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)}
+.offre-detail p{font-size:13px;color:var(--gray);line-height:1.8}
+.offre-detail.open{display:block}
+
+</style></head><body><nav class="nav"><div class="nav__inner"><a href="index.html" class="nav__logo"><div class="nav__logo-bee"><svg width="26" height="26" viewBox="0 0 34 34" fill="none">
   <ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#F5C842" stroke="#1A1612" stroke-width="1.5"/>
   <rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.32"/>
   <rect x="11" y="14" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.32"/>
@@ -14,136 +62,163 @@
 <p style="font-size:17px;color:rgba(250,246,238,.65);margin-top:16px;font-weight:300">Postes en CDI, approche directe, profils qualifiés.</p></div></div></div>
 
 <section class="section"><div class="container">
-  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:36px" class="reveal">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:28px" class="reveal">
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="filter-btn active" onclick="filter('all',this)">Toutes</button>
-      <button class="filter-btn" onclick="filter('it',this)">IT &amp; Digital</button>
-      <button class="filter-btn" onclick="filter('ingenierie',this)">Ingénierie</button>
-      <button class="filter-btn" onclick="filter('tertiaire',this)">Tertiaire</button>
+      <button class="filter-btn active" onclick="filterOffres('all',this)">Toutes</button>
+      <button class="filter-btn" onclick="filterOffres('it',this)">IT &amp; Digital</button>
+      <button class="filter-btn" onclick="filterOffres('sales',this)">Sales</button>
+      <button class="filter-btn" onclick="filterOffres('corporatif',this)">Corporatif</button>
+      <button class="filter-btn" onclick="filterOffres('management',this)">Management</button>
     </div>
-    <span id="offreCount" style="font-size:13px;color:var(--gray);font-weight:600">6 offres</span>
+    <span id="offreCount" style="font-size:13px;color:var(--gray);font-weight:600">8 offres</span>
   </div>
-  <div style="display:flex;flex-direction:column;gap:14px" id="offresList"><div class="card reveal" data-type="it" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">💻</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">Lead Developer React / Node.js</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Aix-en-Provence</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">55–70k€</span>
-        </div>
+  <div id="offresList" style="display:flex;flex-direction:column;gap:14px">
+<div class="offre-card" data-type="it">
+  <div class="offre-top">
+    <div class="offre-icon">⚙️</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">I</span><span class="tl-sp">n</span><span class="tl-sp">g</span><span class="tl-sp">é</span><span class="tl-sp">n</span><span class="tl-sp">i</span><span class="tl-sp">e</span><span class="tl-sp">u</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">D</span><span class="tl-sp">e</span><span class="tl-sp">v</span><span class="tl-sp">O</span><span class="tl-sp">p</span><span class="tl-sp">s</span><span class="tl-sp"> </span><span class="tl-sp">S</span><span class="tl-sp">e</span><span class="tl-sp">n</span><span class="tl-sp">i</span><span class="tl-sp">o</span><span class="tl-sp">r</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Lyon</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">65 000 € brut/an</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off1')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off1">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off1"><span class="tag tag--honey">React</span><span class="tag tag--honey">Node.js</span><span class="tag tag--honey">Lead Dev</span></div>
-  <div id="off1" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Scale-up SaaS en hypercroissance cherche son futur Lead Dev pour structurer une équipe de 6 personnes. Stack React/Node, CI/CD, enjeux d'architecture.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>Environnement cloud AWS/GCP, infra Kubernetes, CI/CD GitLab. Expérience 5 ans minimum. Stack DevOps moderne.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div><div class="card reveal" data-type="ingenierie" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">⚙️</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">Ingénieur Études & Développement</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Marseille</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">42–52k€</span>
-        </div>
+</div>
+<div class="offre-card" data-type="sales">
+  <div class="offre-top">
+    <div class="offre-icon">💼</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">C</span><span class="tl-sp">o</span><span class="tl-sp">m</span><span class="tl-sp">m</span><span class="tl-sp">e</span><span class="tl-sp">r</span><span class="tl-sp">c</span><span class="tl-sp">i</span><span class="tl-sp">a</span><span class="tl-sp">l</span><span class="tl-sp"> </span><span class="tl-sp">G</span><span class="tl-sp">r</span><span class="tl-sp">a</span><span class="tl-sp">n</span><span class="tl-sp">d</span><span class="tl-sp">s</span><span class="tl-sp"> </span><span class="tl-sp">C</span><span class="tl-sp">o</span><span class="tl-sp">m</span><span class="tl-sp">p</span><span class="tl-sp">t</span><span class="tl-sp">e</span><span class="tl-sp">s</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Paris</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">55 000 € + variable</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off2')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off2">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off2"><span class="tag tag--honey">R&D</span><span class="tag tag--honey">Mécanique</span><span class="tag tag--honey">CAO</span></div>
-  <div id="off2" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Bureau d'études industriel cherche ingénieur R&D pour rejoindre une équipe soudée. Projets variés, environnement exigeant et stimulant.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>Portefeuille grands comptes existant à développer. Secteur industrie/services B2B. Package attractif.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div><div class="card reveal" data-type="it" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">🤖</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">Data Engineer Senior</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Full Remote</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">60–75k€</span>
-        </div>
+</div>
+<div class="offre-card" data-type="corporatif">
+  <div class="offre-top">
+    <div class="offre-icon">🏢</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">R</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp">p</span><span class="tl-sp">o</span><span class="tl-sp">n</span><span class="tl-sp">s</span><span class="tl-sp">a</span><span class="tl-sp">b</span><span class="tl-sp">l</span><span class="tl-sp">e</span><span class="tl-sp"> </span><span class="tl-sp">R</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp">s</span><span class="tl-sp">o</span><span class="tl-sp">u</span><span class="tl-sp">r</span><span class="tl-sp">c</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp"> </span><span class="tl-sp">H</span><span class="tl-sp">u</span><span class="tl-sp">m</span><span class="tl-sp">a</span><span class="tl-sp">i</span><span class="tl-sp">n</span><span class="tl-sp">e</span><span class="tl-sp">s</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Marseille</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">58 000 € brut/an</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off3')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off3">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off3"><span class="tag tag--honey">Python</span><span class="tag tag--honey">Spark</span><span class="tag tag--honey">AWS</span></div>
-  <div id="off3" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Groupe bancaire recherche un Data Engineer senior pour concevoir et maintenir des pipelines de données critiques sur AWS.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>Gestion complète RH (recrutement, formation, GPEC). Reporting DG. 200 collaborateurs.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div><div class="card reveal" data-type="tertiaire" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">📊</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">Responsable Achats Groupe</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Aix-en-Provence</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">50–65k€</span>
-        </div>
+</div>
+<div class="offre-card" data-type="management">
+  <div class="offre-top">
+    <div class="offre-icon">🎯</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">D</span><span class="tl-sp">i</span><span class="tl-sp">r</span><span class="tl-sp">e</span><span class="tl-sp">c</span><span class="tl-sp">t</span><span class="tl-sp">e</span><span class="tl-sp">u</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">d</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp"> </span><span class="tl-sp">O</span><span class="tl-sp">p</span><span class="tl-sp">é</span><span class="tl-sp">r</span><span class="tl-sp">a</span><span class="tl-sp">t</span><span class="tl-sp">i</span><span class="tl-sp">o</span><span class="tl-sp">n</span><span class="tl-sp">s</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Toulouse</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">90 000 € brut/an</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off4')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off4">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off4"><span class="tag tag--honey">Achats</span><span class="tag tag--honey">Négociation</span><span class="tag tag--honey">Indirect</span></div>
-  <div id="off4" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Groupe industriel régional cherche son futur Responsable Achats pour structurer la fonction et piloter des achats directs et indirects.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>Pilotage des équipes opérationnelles (50 pers.), P&L, process. Expérience transformation appréciée.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div><div class="card reveal" data-type="it" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">☁️</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">DevOps / Cloud Engineer</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Sophia Antipolis</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">55–68k€</span>
-        </div>
+</div>
+<div class="offre-card" data-type="it">
+  <div class="offre-top">
+    <div class="offre-icon">💻</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">D</span><span class="tl-sp">é</span><span class="tl-sp">v</span><span class="tl-sp">e</span><span class="tl-sp">l</span><span class="tl-sp">o</span><span class="tl-sp">p</span><span class="tl-sp">p</span><span class="tl-sp">e</span><span class="tl-sp">u</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">F</span><span class="tl-sp">u</span><span class="tl-sp">l</span><span class="tl-sp">l</span><span class="tl-sp"> </span><span class="tl-sp">S</span><span class="tl-sp">t</span><span class="tl-sp">a</span><span class="tl-sp">c</span><span class="tl-sp">k</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Bordeaux</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">48 000 € brut/an</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off5')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off5">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off5"><span class="tag tag--honey">AWS</span><span class="tag tag--honey">Kubernetes</span><span class="tag tag--honey">Terraform</span></div>
-  <div id="off5" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Éditeur logiciel en plein développement cherche son premier DevOps pour construire et maintenir l'infrastructure cloud.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>React/Node.js ou Vue/Django. 3 ans d'expérience, remote partiel possible, startup en croissance.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div><div class="card reveal" data-type="ingenierie" style="position:relative">
-  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px">
-    <div style="display:flex;align-items:center;gap:14px">
-      <div style="width:52px;height:52px;background:var(--honey-pale);border:2px solid var(--black);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:3px 3px 0 var(--black);flex-shrink:0">🏭</div>
-      <div>
-        <h3 style="font-size:17px;margin-bottom:4px">Ingénieur Qualité Production</h3>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <span class="tag tag--dark">Aubagne</span>
-          <span class="tag tag--dark">CDI</span>
-          <span class="tag tag--honey">38–48k€</span>
-        </div>
+</div>
+<div class="offre-card" data-type="sales">
+  <div class="offre-top">
+    <div class="offre-icon">🚀</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">B</span><span class="tl-sp">u</span><span class="tl-sp">s</span><span class="tl-sp">i</span><span class="tl-sp">n</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp">s</span><span class="tl-sp"> </span><span class="tl-sp">D</span><span class="tl-sp">e</span><span class="tl-sp">v</span><span class="tl-sp">e</span><span class="tl-sp">l</span><span class="tl-sp">o</span><span class="tl-sp">p</span><span class="tl-sp">e</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">B</span><span class="tl-sp">2</span><span class="tl-sp">B</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Lille</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">45 000 € + variable</span>
       </div>
     </div>
-    <button onclick="toggleDetail('off6')" style="background:var(--honey-pale);border:2px solid var(--black);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--honey);white-space:nowrap;box-shadow:2px 2px 0 var(--black)" id="btn-off6">Voir →</button>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
   </div>
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0" id="tags-off6"><span class="tag tag--honey">Qualité</span><span class="tag tag--honey">IATF</span><span class="tag tag--honey">Amélioration continue</span></div>
-  <div id="off6" style="display:none;margin-top:16px;padding-top:16px;border-top:2px solid var(--lgray)">
-    <p style="font-size:14px;color:var(--gray);line-height:1.8;margin-bottom:16px">Sous-traitant automobile cherche un ingénieur qualité expérimenté pour piloter la conformité et l'amélioration continue en production.</p>
-    <a href="candidats.html#deposer" class="btn btn--primary btn--sm">Postuler →</a>
+  <div class="offre-detail">
+    <p>Développement d'un nouveau territoire. Profil chasseur, autonome, expérience SaaS ou services appréciée.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
   </div>
-</div></div>
+</div>
+<div class="offre-card" data-type="corporatif">
+  <div class="offre-top">
+    <div class="offre-icon">📊</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">C</span><span class="tl-sp">o</span><span class="tl-sp">n</span><span class="tl-sp">t</span><span class="tl-sp">r</span><span class="tl-sp">ô</span><span class="tl-sp">l</span><span class="tl-sp">e</span><span class="tl-sp">u</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">d</span><span class="tl-sp">e</span><span class="tl-sp"> </span><span class="tl-sp">G</span><span class="tl-sp">e</span><span class="tl-sp">s</span><span class="tl-sp">t</span><span class="tl-sp">i</span><span class="tl-sp">o</span><span class="tl-sp">n</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Nantes</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">52 000 € brut/an</span>
+      </div>
+    </div>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
+  </div>
+  <div class="offre-detail">
+    <p>Reporting, analyse des écarts, budgets. Maîtrise Excel/BI. Environnement PME dynamique.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
+  </div>
+</div>
+<div class="offre-card" data-type="management">
+  <div class="offre-top">
+    <div class="offre-icon">⭐</div>
+    <div class="offre-info">
+      <h3 class="offre-titre tl-title"><span class="tl-sp">M</span><span class="tl-sp">a</span><span class="tl-sp">n</span><span class="tl-sp">a</span><span class="tl-sp">g</span><span class="tl-sp">e</span><span class="tl-sp">r</span><span class="tl-sp"> </span><span class="tl-sp">S</span><span class="tl-sp">e</span><span class="tl-sp">r</span><span class="tl-sp">v</span><span class="tl-sp">i</span><span class="tl-sp">c</span><span class="tl-sp">e</span><span class="tl-sp"> </span><span class="tl-sp">C</span><span class="tl-sp">l</span><span class="tl-sp">i</span><span class="tl-sp">e</span><span class="tl-sp">n</span><span class="tl-sp">t</span></h3>
+      <div class="offre-tags">
+        <span class="tag tag--dark">Nice</span>
+        <span class="tag tag--dark">CDI</span>
+        <span class="tag tag--honey">50 000 € brut/an</span>
+      </div>
+    </div>
+    <button class="offre-toggle" onclick="toggleOffre(this)">Voir →</button>
+  </div>
+  <div class="offre-detail">
+    <p>Management équipe de 15 conseillers. KPIs exigeants. Culture service client premium.</p>
+    <a href="candidats.html#deposer" class="btn btn--primary btn--sm" style="margin-top:14px;display:inline-flex">Postuler →</a>
+  </div>
+</div>
+
+  </div>
 </div></section>
 
 <section style="background:var(--honey-pale);padding:clamp(48px,5vw,72px) 0;border-top:2px solid var(--lgray);text-align:center"><div class="container"><div class="reveal">
@@ -160,7 +235,7 @@
           <div class="footer__bee"><svg width="22" height="22" viewBox="0 0 34 34" fill="none"><ellipse cx="17" cy="13" rx="7.5" ry="9.5" fill="#F5C842" stroke="#1A1612" stroke-width="1.5"/><rect x="11" y="10" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.3"/><rect x="11" y="14" width="12" height="2.5" rx="1.25" fill="#1A1612" opacity="0.3"/><circle cx="14" cy="11" r="1.3" fill="#1A1612"/><circle cx="20" cy="11" r="1.3" fill="#1A1612"/></svg></div>
           <div><div class="footer__brand-name">S<span>&amp;</span>arch</div><span class="footer__brand-sub">by The Hive Company</span></div>
         </div>
-        <p class="footer__desc">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Basé à Aix-en-Provence, on intervient sur toute la région PACA et en remote.<br><br>860 rue René Descartes · 13100 Aix-en-Provence<br>contact@search-hive.fr</p>
+        <p class="footer__desc">Cabinet de recrutement spécialisé IT, ingénierie et fonctions stratégiques. Basé à Aix-en-Provence, on intervient sur toute la région PACA et en remote.<br><br>860 rue René Descartes · 13100 Aix-en-Provence<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8deee2e3f9eceef9cdfee8ecffeee5a0e5e4fbe8a3ebff">[email&#160;protected]</a></p>
       </div>
       <div class="footer__col"><h5>Entreprises</h5><a href="contact.html">Confier un recrutement</a><a href="expertises.html">Nos expertises</a><a href="entreprises.html">Notre méthode</a><a href="entreprises.html#faq">FAQ</a></div>
       <div class="footer__col"><h5>Candidats</h5><a href="offres.html">Voir les offres</a><a href="candidats.html">Déposer son CV</a><a href="candidats.html#faq">FAQ candidats</a></div>
@@ -172,8 +247,28 @@
     </div>
   </div>
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("open")}window.addEventListener("scroll",()=>{document.querySelector(".nav").classList.toggle("scrolled",window.scrollY>40)});const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("revealed")})},{threshold:0.1});document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+
+function toggleOffre(btn){
+  var detail=btn.closest('.offre-card').querySelector('.offre-detail');
+  var open=detail.classList.toggle('open');
+  btn.textContent=open?'Fermer ✕':'Voir →';
+  btn.classList.toggle('open',open);
+}
+function filterOffres(type,btn){
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  var cards=document.querySelectorAll('.offre-card');
+  var count=0;
+  cards.forEach(function(c){
+    var show=type==='all'||c.dataset.type===type;
+    c.style.display=show?'block':'none';
+    if(show)count++;
+  });
+  document.getElementById('offreCount').textContent=count+' offre'+(count>1?'s':'');
+}
+
 function filter(type,btn){
   document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
@@ -187,9 +282,4 @@ function filter(type,btn){
   document.getElementById('offreCount').textContent=count+' offre'+(count>1?'s':'');
 }
 function toggleDetail(id){
-  const d=document.getElementById(id);
-  const btn=document.getElementById('btn-'+id);
-  if(d.style.display==='none'){d.style.display='block';btn.textContent='Fermer ✕';}
-  else{d.style.display='none';btn.textContent='Voir →';}
-}
-</script></body></html>
+  const d=document.getEl

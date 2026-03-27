@@ -211,3 +211,5 @@ footer{background:var(--black);padding:clamp(48px,6vw,72px) 0 32px;border-top:3p
   .process-steps{grid-template-columns:1fr}
   h1{font-size:clamp(36px,8vw,52px)}
 }
+
+.card--honey-pale{background:var(--honey-pale);border-color:var(--honey)}
